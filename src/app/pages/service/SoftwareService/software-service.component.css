@@ -8,7 +8,7 @@ h2 {
   font-weight: 700;
   width: 60%;
   font-size: 32px;
-  line-height: 2;
+  line-height: 1.2;
   color: #6365ad;
   text-align: center;
 }
@@ -18,17 +18,16 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f6fb;
-  max-height: 700px;
+  max-height: 1200px;
   gap: 10rem;
 }
 
 .main-header-section-description {
   display: flex;
-  width: 70%;
+  width: 100%;
   align-self: center;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 0.9;
   padding-bottom: 5%;
 }
 
@@ -65,11 +64,16 @@ h2 {
 
 .mat-card-container {
   max-width: 800px;
+  min-height: 350px;
 }
 
 .mat-card-container:last-child {
   align-self: center;
   grid-column-start: 2;
+}
+
+.card-padding {
+  margin: 8px;
 }
 
 .icon {
@@ -89,6 +93,11 @@ h2 {
 
 .mat-card-content {
   font-size: 18px;
+}
+
+.secondary-bg {
+  background-color: #f0f6fb;
+  max-width: 2400px;
 }
 
 #mySoftwareServiceContainer {
