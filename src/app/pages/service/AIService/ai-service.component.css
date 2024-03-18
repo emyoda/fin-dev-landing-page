@@ -1,0 +1,95 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  padding-top: 5%;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 2;
+  color: #6365ad;
+}
+
+.main-header-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f6fb;
+  max-height: 700px;
+  gap: 10rem;
+}
+
+.main-header-section-description {
+  display: flex;
+  width: 70%;
+  align-self: center;
+  font-size: 24px;
+  line-height: 1.2;
+  padding-bottom: 5%;
+}
+
+.main-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  h3 {
+    font-weight: 600;
+    padding-top: 3%;
+    color: #000;
+    font-size: 28px;
+  }
+}
+.main-section-container.why-us {
+  background-color: #f0f6fb;
+  h3 {
+    margin-top: 4%;
+  }
+}
+
+.main-services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 7rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
+
+.mat-card-container {
+  max-width: 800px;
+}
+
+.mat-card-container:last-child {
+  align-self: center;
+  grid-column-start: 2;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.mat-card-header {
+  margin: 0 auto;
+  font-size: 38px;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mat-card-content {
+  font-size: 18px;
+}
+
+#myRobotContainer {
+  width: 15rem;
+  height: 25rem;
+}
