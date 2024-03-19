@@ -27,16 +27,15 @@
   font-size: 17px;
   padding: 10px 15px;
   display: block;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .top span:hover {
   box-shadow: -1px 3px 11px 1px rgba(0, 0, 0, 0.05);
 }
-
 
 /* 2. mobile menu css
 --------------------------------------------------------------------*/
@@ -104,9 +103,9 @@
   color: #222222 !important;
 }
 .mean-container .mean-nav ul li .mega-menu li {
-	border: none;
-	padding-bottom: 0;
-	padding-left: 10px;
+  border: none;
+  padding-bottom: 0;
+  padding-left: 10px;
 }
 .mean-container .mean-nav ul li .mega-menu li a {
   color: #222222;
@@ -119,17 +118,19 @@
 .mean-container .mean-nav ul li .mega-menu.full-mega-menu2 li {
   padding-top: 10px;
 }
-.mean-container .mean-nav ul li .mega-menu.full-mega-menu2 li .mean-expand{line-height: 2.4;}
+.mean-container .mean-nav ul li .mega-menu.full-mega-menu2 li .mean-expand {
+  line-height: 2.4;
+}
 .mean-container .mean-nav ul li .mega-dropdown-menu a span {
   display: none !important;
 }
 .mean-container .mean-nav ul li a.mean-expand {
-	right: 0;
-	width: 100%;
-	text-align: right;
+  right: 0;
+  width: 100%;
+  text-align: right;
 }
 .mean-container .mean-nav ul li a.mean-expand:hover {
-	background: transparent;
+  background: transparent;
 }
 .mean-container .mean-nav ul li .mega-menu.mega-dropdown-menu li a.mean-expand {
   right: 45px;
@@ -144,7 +145,6 @@
   background: #fff;
 }
 /* .side-mobile-menu end*/
-
 
 /* 3. slider shape 
 ----------------------------------------------------*/
@@ -230,114 +230,130 @@
 }
 
 /* home2 shape */
-.hm2-left-dotted {top: 40%;left: 80px;}
-.hm2-right-dotted {top: 28%;right: 50px;}
+.hm2-left-dotted {
+  top: 40%;
+  left: 80px;
+}
+.hm2-right-dotted {
+  top: 28%;
+  right: 50px;
+}
 .hm2-middle-dotted {
   right: -80px;
   top: -70px;
 }
 .hm2-bg-shape1 {
-	left: 5%;
-	top: 18%;
+  left: 5%;
+  top: 18%;
 }
 .hm2-bg-shape2 {
-	left: 2%;
-	bottom: 45%;
+  left: 2%;
+  bottom: 45%;
 }
 .hm2-bg-shape3 {
-	left: 21%;
-	top: 15%;
+  left: 21%;
+  top: 15%;
 }
 .hm2-bg-shape4 {
-	left: 18%;
-	top: 34%;
+  left: 18%;
+  top: 34%;
 }
 .hm2-bg-shape5 {
-	left: 14%;
-	top: 50%;
+  left: 14%;
+  top: 50%;
 }
 .hm2-bg-shape6 {
-	left: 36%;
-	top: 45%;
+  left: 36%;
+  top: 45%;
 }
 .hm2-bg-shape7 {
-	right: 35%;
-	top: 14%;
+  right: 35%;
+  top: 14%;
 }
 .hm2-bg-shape8 {
-	right: 22%;
-	top: 30%;
+  right: 22%;
+  top: 30%;
 }
 .hm2-bg-shape9 {
-	right: 5%;
-	bottom: 48%;
+  right: 5%;
+  bottom: 48%;
 }
 .hm2-bg-shape10 {
-	right: 10%;
-	bottom: 20%;
+  right: 10%;
+  bottom: 20%;
 }
 .hm2-bg-shape11 {
-	right: 15%;
-	top: 10%;
+  right: 15%;
+  top: 10%;
 }
 .hm2-bg-shape12 {
-	right: 3%;
-	top: 12%;
+  right: 3%;
+  top: 12%;
 }
-.hm2-shape{position: absolute;}
+.hm2-shape {
+  position: absolute;
+}
 .hm2-shape-1 {
-	left: 18%;
-	top: 16%;
+  left: 18%;
+  top: 16%;
 }
 .hm2-shape-2 {
-	left: 18%;
-	top: 27%;
+  left: 18%;
+  top: 27%;
 }
 .hm2-shape-3 {
-	left: 17%;
-	top: 42%;
+  left: 17%;
+  top: 42%;
 }
 .hm2-shape-4 {
-	left: 2%;
-	top: 45%;
+  left: 2%;
+  top: 45%;
 }
 .hm2-shape-5 {
-	left: 34%;
-	top: 39%;
+  left: 34%;
+  top: 39%;
 }
 .hm2-shape-6 {
-	right: 38%;
-	top: 39%;
+  right: 38%;
+  top: 39%;
 }
 .hm2-shape-7 {
-	right: 25%;
-	top: 39%;
+  right: 25%;
+  top: 39%;
 }
 .hm2-shape-8 {
-	right: 12%;
-	bottom: 25%;
+  right: 12%;
+  bottom: 25%;
 }
 .hm2-shape-9 {
-	right: 12%;
-	top: 31%;
+  right: 12%;
+  top: 31%;
 }
 .hm2-shape-10 {
-	right: 0%;
-	top: 10%;
+  right: 0%;
+  top: 10%;
 }
 .hm2-shape-11 {
-	right: 10%;
-	top: 17%;
+  right: 10%;
+  top: 17%;
 }
 .hm2-shape-12 {
-	right: 30%;
-	top: 9%;
+  right: 30%;
+  top: 9%;
 }
 
 /* home3 shape */
-.hm3-left-dotted{left:5%; bottom:25%}
-.hm3-right-dotted{ right: 2%;top: 30%;}
-.hm3-shape {position: absolute;}
+.hm3-left-dotted {
+  left: 5%;
+  bottom: 25%;
+}
+.hm3-right-dotted {
+  right: 2%;
+  top: 30%;
+}
+.hm3-shape {
+  position: absolute;
+}
 .hm3-shape-1 {
   left: 17%;
   top: 22%;
@@ -347,44 +363,44 @@
   bottom: 10%;
 }
 .hm3-shape-3 {
-	left: 40%;
-	bottom: 29%;
+  left: 40%;
+  bottom: 29%;
 }
 .hm3-shape-4 {
   left: 50%;
   top: 60%;
 }
 .hm3-shape-5 {
-	left: 55%;
-	top: 18%;
+  left: 55%;
+  top: 18%;
 }
 .hm3-shape-6 {
-	right: 9%;
-	bottom: 42%;
+  right: 9%;
+  bottom: 42%;
 }
 .hm3-shape-7 {
-	right: 1%;
-	top: 50%;
+  right: 1%;
+  top: 50%;
 }
 .hm3-shape-8 {
   right: 12%;
   top: 12%;
 }
 .hm3-shape-9 {
-	left: 32%;
-	top: 18%;
+  left: 32%;
+  top: 18%;
 }
 .hm3-shape-10 {
-	right: 2%;
-	bottom: 15%;
+  right: 2%;
+  bottom: 15%;
 }
 .hm3-shape-11 {
-	right: 3%;
-	top: 22%;
+  right: 3%;
+  top: 22%;
 }
 .hm3-shape-12 {
-	right: 40%;
-	bottom: 10%;
+  right: 40%;
+  bottom: 10%;
 }
 .hm3-bg-shape1 {
   top: 0;
@@ -407,20 +423,20 @@
   bottom: 0;
 }
 .hm3-bg-shape6 {
-	right: 30%;
-	top: 34%;
+  right: 30%;
+  top: 34%;
 }
 .hm3-bg-shape8 {
   right: 60px;
   bottom: 50px;
 }
 .hm3-bg-shape9 {
-	top: 28%;
-	left: 9%;
+  top: 28%;
+  left: 9%;
 }
 .hm3-bg-shape10 {
-	top: 28%;
-	left: 41%;
+  top: 28%;
+  left: 41%;
 }
 
 /* home4 shape  start*/
@@ -474,82 +490,86 @@
 }
 
 /* home5 shape  start*/
-.hm5-shape {position: absolute;}
+.hm5-shape {
+  position: absolute;
+}
 .hm5-shape-1 {
-	left: 15%;
-	top: 18%;
+  left: 15%;
+  top: 18%;
 }
 .hm5-shape-2 {
-	left: 10%;
-	top: 40%;
+  left: 10%;
+  top: 40%;
 }
 .hm5-shape-3 {
-	left: 3%;
-	bottom: 40%;
+  left: 3%;
+  bottom: 40%;
 }
 .hm5-shape-4 {
-	left: 45%;
-	top: 25%;
+  left: 45%;
+  top: 25%;
 }
 .hm5-shape-5 {
-	left: 52.5%;
-	top: 46%;
+  left: 52.5%;
+  top: 46%;
 }
 .hm5-shape-6 {
-	left: 52%;
-	bottom: 15%;
+  left: 52%;
+  bottom: 15%;
 }
 .hm5-shape-7 {
-	right: 5%;
-	top: 12%;
+  right: 5%;
+  top: 12%;
 }
 .hm5-shape-8 {
-	right: 0;
-	bottom: 20%;
+  right: 0;
+  bottom: 20%;
 }
 /* .hm5-shape-9 {
 	left: 10%;
 	top: 10%;
 } */
 .hm5-shape-10 {
-	right: 9%;
-	top: 22%;
+  right: 9%;
+  top: 22%;
 }
 .hm5-shape-11 {
-	right: 0%;
-	top: 45%;
+  right: 0%;
+  top: 45%;
 }
-.hm5-round-shape {background: #d5d2fe;}
+.hm5-round-shape {
+  background: #d5d2fe;
+}
 .hm5-round-shape-1 {
-	width: 20px;
-	height: 20px;
-	left: 15%;
-	bottom: 30%;
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  bottom: 30%;
 }
 .hm5-round-shape-2 {
-	width: 16px;
-	left: 39%;
-	bottom: 27%;
-	height: 16px;
+  width: 16px;
+  left: 39%;
+  bottom: 27%;
+  height: 16px;
 }
 .hm5-round-shape-3 {
-	width: 15px;
-	height: 15px;
-	left: 52%;
-	top: 25%;
+  width: 15px;
+  height: 15px;
+  left: 52%;
+  top: 25%;
 }
 .hm5-round-shape-4 {
-	width: 17px;
-	height: 17px;
-	background: #ff81ae;
-	right: 35%;
-	top: 18%;
+  width: 17px;
+  height: 17px;
+  background: #ff81ae;
+  right: 35%;
+  top: 18%;
 }
 .hm5-round-shape-5 {
-	width: 17px;
-	height: 17px;
-	right: 2%;
-	top: 55%;
+  width: 17px;
+  height: 17px;
+  right: 2%;
+  top: 55%;
 }
 
 /* page shape start */
@@ -583,69 +603,64 @@
   right: 6%;
 }
 
-
-
 /* 4. common animation css
 --------------------------------------------------------------------*/
-/* pulse,flash animate all css end */ 
+/* pulse,flash animate all css end */
 /* flash   */
-.animated-flash:hover .flash  {
-	-webkit-animation: flash .5s ease-in-out;
-	-moz-animation: flash .5s ease-in-out;
-	-ms-animation: flash .5s ease-in-out;
-	animation: flash .5s ease-in-out;
+.animated-flash:hover .flash {
+  -webkit-animation: flash 0.5s ease-in-out;
+  -moz-animation: flash 0.5s ease-in-out;
+  -ms-animation: flash 0.5s ease-in-out;
+  animation: flash 0.5s ease-in-out;
 }
 .flash-infinite {
-	-webkit-animation: flash .9s ease-in-out infinite ;
-	-moz-animation: flash .5s ease-in-out infinite;
-	-ms-animation: flash .5s ease-in-out infinite;
-	animation: flash .9s ease-in-out infinite ;
+  -webkit-animation: flash 0.9s ease-in-out infinite;
+  -moz-animation: flash 0.5s ease-in-out infinite;
+  -ms-animation: flash 0.5s ease-in-out infinite;
+  animation: flash 0.9s ease-in-out infinite;
 }
 
 /* plus */
-.animated-plus:hover .plus  {
-	-webkit-animation: plus .9s ease-in-out;
-	-moz-animation: plus .9s ease-in-out;
-	-ms-animation: plus .9s ease-in-out;
-	animation: plus .9s ease-in-out;
+.animated-plus:hover .plus {
+  -webkit-animation: plus 0.9s ease-in-out;
+  -moz-animation: plus 0.9s ease-in-out;
+  -ms-animation: plus 0.9s ease-in-out;
+  animation: plus 0.9s ease-in-out;
 }
-.plus-infinite  {
-	-webkit-animation: plus .5s ease-in-out infinite ;
-	-moz-animation: plus .5s ease-in-out infinite;
-	-ms-animation: plus .5s ease-in-out infinite;
-	animation: plus .5s ease-in-out infinite ;
+.plus-infinite {
+  -webkit-animation: plus 0.5s ease-in-out infinite;
+  -moz-animation: plus 0.5s ease-in-out infinite;
+  -ms-animation: plus 0.5s ease-in-out infinite;
+  animation: plus 0.5s ease-in-out infinite;
 }
 
 /* heartbeat */
 .heartbeat {
-	animation: heartbeat 3s infinite alternate;
-	-webkit-animation: heartbeat 3s infinite alternate;
+  animation: heartbeat 3s infinite alternate;
+  -webkit-animation: heartbeat 3s infinite alternate;
 }
 @-webkit-keyframes heartbeat {
-	to {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
-
 
 /* heartbeat2 */
 
 .heartbeat2 {
-	animation: heartbeat 3s infinite alternate;
-	-webkit-animation: heartbeat 3s infinite alternate;
+  animation: heartbeat 3s infinite alternate;
+  -webkit-animation: heartbeat 3s infinite alternate;
 }
 @-webkit-keyframes heartbeat2 {
-	to {
-		transform: scale(.8);
-		-webkit-transform: scale(.8);
-		-moz-transform: scale(.8);
-		-ms-transform: scale(.8);
-		-o-transform: scale(.8);
+  to {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
 }
-
-}
-
 
 /* bounce-animate start */
 .bounce-animate {
@@ -741,7 +756,7 @@
   bottom: -2px;
   right: -2px;
   border-radius: inherit;
-  border: 1px solid #6365ad;
+  border: 1px solid #1ac4ff;
   -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
     infinite;
   animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
@@ -780,7 +795,7 @@
   height: 110px;
   top: 50%;
   left: 50%;
-  border: 1px solid #6365ad;
+  border: 1px solid #1ac4ff;
   -webkit-animation: zoomBig 3.25s linear infinite;
   animation: zoomBig 3.25s linear infinite;
   border-radius: 50% !important;
@@ -835,8 +850,6 @@
   }
 }
 
-
-
 /* 5. preloader css
 --------------------------------------------------------------------*/
 /* preloader css start */
@@ -863,73 +876,72 @@
   margin-top: -75px;
   margin-left: -75px;
 }
-.object{
-	width: 20px;
-	height: 20px;
-	background-color: #6365ad;
-	float: left;
-	margin-right: 20px;
-	margin-top: 65px;
-	-moz-border-radius: 50% 50% 50% 50%;
-	-webkit-border-radius: 50% 50% 50% 50%;
-	border-radius: 50% 50% 50% 50%;
+.object {
+  width: 20px;
+  height: 20px;
+  background-color: #1ac4ff;
+  float: left;
+  margin-right: 20px;
+  margin-top: 65px;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
 }
 
-#object_one {	
-	-webkit-animation: object_one 1.5s infinite;
-	animation: object_one 1.5s infinite;
+#object_one {
+  -webkit-animation: object_one 1.5s infinite;
+  animation: object_one 1.5s infinite;
 }
 #object_two {
-	-webkit-animation: object_two 1.5s infinite;
-	animation: object_two 1.5s infinite;
-	-webkit-animation-delay: 0.25s; 
-    animation-delay: 0.25s;
+  -webkit-animation: object_two 1.5s infinite;
+  animation: object_two 1.5s infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 #object_three {
-    -webkit-animation: object_three 1.5s infinite;
-	animation: object_three 1.5s infinite;
-	-webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+  -webkit-animation: object_three 1.5s infinite;
+  animation: object_three 1.5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 @-webkit-keyframes object_one {
-75% { -webkit-transform: scale(0); }
+  75% {
+    -webkit-transform: scale(0);
+  }
 }
 
 @keyframes object_one {
-  75% { 
+  75% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
 }
 
-
-
-
-
 @-webkit-keyframes object_two {
-  75% { -webkit-transform: scale(0); }
+  75% {
+    -webkit-transform: scale(0);
+  }
 }
 
 @keyframes object_two {
-  75% { 
-    transform: scale(0);
-    -webkit-transform:  scale(0);
-  }
-
-}
-
-@-webkit-keyframes object_three {
-  75% { -webkit-transform: scale(0); }
-}
-
-@keyframes object_three {
-
-  75% { 
+  75% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
-  
+}
+
+@-webkit-keyframes object_three {
+  75% {
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes object_three {
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
 }
 
 /* preloader end */

@@ -9,8 +9,12 @@ h2 {
   width: 60%;
   font-size: 32px;
   line-height: 1.2;
-  color: #6365ad;
+  color: #1ac4ff;
   text-align: center;
+}
+
+.max-w {
+  max-width: 4800px;
 }
 
 .main-header-section-container {
@@ -19,6 +23,7 @@ h2 {
   align-items: center;
   justify-content: center;
   max-height: 1200px;
+  max-width: 2400px;
   gap: 10rem;
 }
 
@@ -44,8 +49,13 @@ h2 {
     font-size: 28px;
   }
 }
+
+.secondary-bg {
+  background-color: rgba(172, 222, 220, 0.12);
+  max-width: 4800px;
+}
+
 .main-section-container.why-us {
-  background-color: #f0f6fb;
   h3 {
     margin-top: 4%;
   }
@@ -93,11 +103,6 @@ h2 {
 
 .mat-card-content {
   font-size: 18px;
-}
-
-.secondary-bg {
-  background-color: #f0f6fb;
-  max-width: 2400px;
 }
 
 #mySoftwareServiceContainer {

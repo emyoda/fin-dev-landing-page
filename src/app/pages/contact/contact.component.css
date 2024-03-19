@@ -23,14 +23,8 @@
   font-size: 32px;
 
   span {
-    color: #6365ad;
+    color: #1ac4ff;
   }
-}
-
-.contact-container-info-canvas-container {
-  /* margin-right: 10rem; */
-  /* padding-top: 10rem; */
-  /* width: 40%; */
 }
 
 .contact-container-info-text-body {
@@ -50,11 +44,7 @@
 }
 
 .contact-area-container {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   padding-top: 5rem;
-
 }
 
 .contact-info-container {
@@ -66,7 +56,6 @@
   gap: 5rem;
   margin: 0 auto;
   padding-bottom: 2rem;
-  /* width: 50%; */
 }
 
 .mat-card-container {
@@ -74,7 +63,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-right: 5rem; */
   gap: 3rem;
   width: 85%;
   padding-left: 5%;
@@ -130,7 +118,6 @@ form {
   margin-bottom: 2rem;
 }
 
-
 .submit-button-invalid {
   opacity: 0.3;
   cursor: none;
@@ -156,7 +143,6 @@ form {
 }
 
 /* CSS */
-
 
 .header {
   height: 600px !important;

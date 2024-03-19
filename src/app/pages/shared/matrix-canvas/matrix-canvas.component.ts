@@ -106,7 +106,7 @@ export class MatrixRainComponent implements AfterViewInit {
 
     for (let i = 0; i < this.drops.length; i++) {
       const letter = this.word[i % this.word.length];
-      this.ctx.fillStyle = "#6365ad";
+      this.ctx.fillStyle = "#1ac4ff";
       this.ctx.font = `${this.fontSize}px monospace`;
 
       const delay = i * 20; // Adjust the delay as needed

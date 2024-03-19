@@ -9,8 +9,12 @@ h2 {
   width: 60%;
   font-size: 32px;
   line-height: 1.2;
-  color: #6365ad;
+  color: #1ac4ff;
   text-align: center;
+}
+
+.max-w {
+  max-width: 4800px;
 }
 
 .main-header-section-container {
@@ -36,7 +40,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   gap: 4rem;
   h3 {
     font-weight: 600;
@@ -47,9 +50,10 @@ h2 {
 }
 
 .secondary-bg {
-  background-color: #f0f6fb;
-  max-width: 2400px;
+  background-color: rgba(172, 222, 220, 0.12);
+  max-width: 4800px;
 }
+
 .main-section-container.why-us {
   h3 {
     margin-top: 4%;

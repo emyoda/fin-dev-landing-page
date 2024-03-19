@@ -8,7 +8,11 @@ h2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 2;
-  color: #6365ad;
+  color: #1ac4ff;
+}
+
+.max-w {
+  max-width: 4800px;
 }
 
 .main-header-section-container {
@@ -16,7 +20,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f6fb;
   max-height: 1200px;
   gap: 10rem;
 }
@@ -45,12 +48,11 @@ h2 {
 }
 
 .secondary-bg {
-  background-color: #f0f6fb;
-  max-width: 2400px;
+  background-color: rgba(172, 222, 220, 0.12);
+  max-width: 4800px;
 }
 
 .main-section-container.why-us {
-  background-color: #f0f6fb;
   h3 {
     margin-top: 4%;
   }

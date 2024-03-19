@@ -1,11 +1,11 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import * as THREE from 'three';
+import { Component, Input, OnDestroy, OnInit } from "@angular/core";
+import * as THREE from "three";
 
 @Component({
-  selector: 'app-ai-canvas',
+  selector: "app-ai-canvas",
   standalone: true,
-  templateUrl: './ai-canvas.component.html',
-  styleUrls: ['./ai-canvas.component.css'],
+  templateUrl: "./ai-canvas.component.html",
+  styleUrls: ["./ai-canvas.component.css"],
 })
 export class AICanvasComponent implements OnInit, OnDestroy {
   @Input() containerId!: string;
@@ -22,7 +22,7 @@ export class AICanvasComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (!this.containerId) {
-      console.error('Please provide a target container ID for the robot.');
+      console.error("Please provide a target container ID for the robot.");
       return;
     }
     this.init();
@@ -30,9 +30,9 @@ export class AICanvasComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('click', this.rotateRobotOnClick.bind(this));
-      window.removeEventListener('resize', this.handleResize.bind(this));
+    if (typeof window !== "undefined") {
+      window.removeEventListener("click", this.rotateRobotOnClick.bind(this));
+      window.removeEventListener("resize", this.handleResize.bind(this));
     }
   }
 
@@ -41,13 +41,13 @@ export class AICanvasComponent implements OnInit, OnDestroy {
     this.scene = new THREE.Scene();
 
     // Create a camera
-    if (typeof window !== 'undefined') {
-      console.log('here');
+    if (typeof window !== "undefined") {
+      console.log("here");
       this.camera = new THREE.PerspectiveCamera(
         75,
         window.innerWidth / window.innerHeight,
         0.1,
-        1000,
+        1000
       );
       this.camera.position.z = 5;
       this.renderer = new THREE.WebGLRenderer();
@@ -64,8 +64,8 @@ export class AICanvasComponent implements OnInit, OnDestroy {
       this.createRobot();
 
       // Add event listener for mouse click
-      window.addEventListener('click', this.rotateRobotOnClick.bind(this));
-      window.addEventListener('resize', this.handleResize.bind(this));
+      window.addEventListener("click", this.rotateRobotOnClick.bind(this));
+      window.addEventListener("resize", this.handleResize.bind(this));
 
       // Animation loop
       this.animate();
@@ -79,15 +79,20 @@ export class AICanvasComponent implements OnInit, OnDestroy {
     const limbGeometry = new THREE.CylinderGeometry(0.1, 0.1, 1, 32);
 
     // Create materials
-    const material = new THREE.MeshNormalMaterial();
+
+    const bodyMaterial = new THREE.MeshBasicMaterial({
+      color: 0xeef8f8,
+    });
+    const headMaterial = new THREE.MeshBasicMaterial({ color: 0x1ac4ff });
+    const limbMaterial = new THREE.MeshBasicMaterial({ color: 0x1ac4ff });
 
     // Create body parts
-    const body = new THREE.Mesh(bodyGeometry, material);
-    const head = new THREE.Mesh(headGeometry, material);
-    const leftArm = new THREE.Mesh(limbGeometry, material);
-    const rightArm = new THREE.Mesh(limbGeometry, material);
-    const leftLeg = new THREE.Mesh(limbGeometry, material);
-    const rightLeg = new THREE.Mesh(limbGeometry, material);
+    const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+    const head = new THREE.Mesh(headGeometry, headMaterial);
+    const leftArm = new THREE.Mesh(limbGeometry, limbMaterial);
+    const rightArm = new THREE.Mesh(limbGeometry, limbMaterial);
+    const leftLeg = new THREE.Mesh(limbGeometry, limbMaterial);
+    const rightLeg = new THREE.Mesh(limbGeometry, limbMaterial);
 
     // Position the body parts
     head.position.y = 1.2;
