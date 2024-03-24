@@ -1,0 +1,19 @@
+{
+  "APP": 
+  {
+    "TABS": 
+    {
+      "HOME": "Startseite",
+      "ABOUT": "Über uns",
+      "SERVICE": "Dienstleistungen",
+      "CONTACT": "Kontaktiere uns"
+    },
+    "SERVICE_TABS":
+    {
+      "CONSULTANCY_SERVICE": "Beratungsdienst",
+      "SOFTWARE_SERVICE": "Software-Dienst",
+      "CLOUD_SERVICE": "Cloud-Dienst",
+      "AI_SERVICE": "KI-Dienst"
+    }
+  }
+}

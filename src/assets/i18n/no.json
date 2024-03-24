@@ -1,0 +1,19 @@
+{
+  "APP": 
+  {
+    "TABS": 
+    {
+      "HOME": "Hjem",
+      "ABOUT": "Om oss",
+      "SERVICE": "Tjeneste",
+      "CONTACT": "Kontakt oss"
+    },
+    "SERVICE_TABS": 
+    {
+      "CONSULTANCY_SERVICE": "Konsulenttjeneste",
+      "SOFTWARE_SERVICE": "Programvaretjeneste",
+      "CLOUD_SERVICE": "Skytjeneste",
+      "AI_SERVICE": "AI-tjeneste"
+    }
+  }
+}

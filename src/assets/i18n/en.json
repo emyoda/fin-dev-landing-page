@@ -1,0 +1,19 @@
+{
+  "APP": 
+  {
+    "TABS": 
+    {
+      "HOME": "Home",
+      "ABOUT": "About us",
+      "SERVICE": "Service",
+      "CONTACT": "Contact us"
+    }, 
+    "SERVICE_TABS": 
+    {
+      "CONSULTANCY_SERVICE": "Consultancy service",
+      "SOFTWARE_SERVICE": "Software service",
+      "CLOUD_SERVICE": "Cloud service",
+      "AI_SERVICE": "AI service"
+    }
+  }
+}

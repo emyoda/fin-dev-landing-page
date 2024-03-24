@@ -30,7 +30,7 @@
               (mouseenter)="closeMenu()"
               *ngIf="!tab.hidden; else hiddenTab"
             >
-              {{ tab.title }}
+              {{ tab.title | translate }}
             </a>
             <ng-template #hiddenTab>
               <div
@@ -42,7 +42,7 @@
                 (mouseenter)="openMenu()"
               >
                 <a class="btn-with-icon" routerLinkActive="active" mat-button>
-                  {{ tab.title }}
+                  {{ tab.title | translate }}
                   <mat-icon
                     class="expand"
                     svgIcon="{{ isMenuOpen() ? 'expand-less' : 'expand-more' }}"
@@ -51,6 +51,7 @@
               </div>
             </ng-template>
           </ng-container>
+          <app-language-selector></app-language-selector>
         </div>
       </div>
     </mat-toolbar-row>
@@ -62,7 +63,7 @@
         *ngFor="let subTab of serviceTabs"
         [routerLink]="subTab.path"
       >
-        {{ subTab.title }}
+        {{ subTab.title | translate }}
       </a>
     </mat-nav-list>
   </mat-menu>
