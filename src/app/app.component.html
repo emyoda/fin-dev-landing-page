@@ -30,7 +30,7 @@
               (mouseenter)="closeMenu()"
               *ngIf="!tab.hidden; else hiddenTab"
             >
-              {{ tab.title }}
+              {{ tab.title | translate }}
             </a>
             <ng-template #hiddenTab>
               <div
@@ -42,7 +42,7 @@
                 (mouseenter)="openMenu()"
               >
                 <a class="btn-with-icon" routerLinkActive="active" mat-button>
-                  {{ tab.title }}
+                  {{ tab.title | translate }}
                   <mat-icon
                     class="expand"
                     svgIcon="{{ isMenuOpen() ? 'expand-less' : 'expand-more' }}"
@@ -51,6 +51,7 @@
               </div>
             </ng-template>
           </ng-container>
+          <app-language-selector></app-language-selector>
         </div>
       </div>
     </mat-toolbar-row>
@@ -62,7 +63,7 @@
         *ngFor="let subTab of serviceTabs"
         [routerLink]="subTab.path"
       >
-        {{ subTab.title }}
+        {{ subTab.title | translate }}
       </a>
     </mat-nav-list>
   </mat-menu>
@@ -78,9 +79,9 @@
             (click)="tabClicked()"
             [routerLink]="tab.path"
           >
-            <span class="menu-item" [class.active]="rla.isActive">{{
-              tab.title
-            }}</span>
+            <span class="menu-item" [class.active]="rla.isActive">
+              {{ tab.title | translate }}
+            </span>
           </a>
           <ng-template #serviceTab>
             <div class="service-mobile-container">
@@ -90,9 +91,9 @@
                 mat-list-item
                 (click)="toggleServiceTabs()"
               >
-                <span class="menu-item" [class.active]="rla.isActive">{{
-                  tab.title
-                }}</span>
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ tab.title | translate }}
+                </span>
               </a>
               <mat-icon
                 svgIcon="{{ showServiceTabs ? 'expand-less' : 'expand-more' }}"
@@ -110,13 +111,14 @@
                 *ngFor="let subTab of serviceTabs"
                 [routerLink]="subTab.path"
               >
-                <span class="menu-item" [class.active]="rla.isActive">{{
-                  subTab.title
-                }}</span>
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ subTab.title | translate }}
+                </span>
               </a>
             </ng-container>
           </ng-template>
         </ng-container>
+        <app-language-selector style="margin-left: 5px;"></app-language-selector>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>

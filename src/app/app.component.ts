@@ -15,6 +15,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
+import { LanguageSelectorComponent } from './utils/language-selector/language-selector.component';
+import { TranslationModule } from './services/translation.module';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageEnum } from './utils/enum/language-enum';
+import { TranslationService } from './services/translation.service';
 
 interface Tab {
   path: string;
@@ -27,6 +32,8 @@ interface Tab {
   standalone: true,
   imports: [
     CommonModule,
+    TranslationModule,
+    TranslateModule,
     RouterOutlet,
     MatSnackBarModule,
     MatTabsModule,
@@ -39,9 +46,11 @@ interface Tab {
     MatSidenavModule,
     FlexLayoutModule,
     MatButtonModule,
+    LanguageSelectorComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  providers: [ TranslationService ]
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) menuTrigger: MatMenuTrigger | undefined;
@@ -50,28 +59,42 @@ export class AppComponent implements OnInit {
   isSideNavOpen = false;
   showServiceTabs = false;
   tabs: Tab[] = [
-    { path: 'home', title: 'Home' },
-    { path: 'about', title: 'About us' },
-    { path: 'services', title: 'Service', hidden: true },
-    { path: 'contact', title: 'Contact us' },
+    { path: 'home', title: 'APP.TABS.HOME' },
+    { path: 'about', title: 'APP.TABS.ABOUT' },
+    { path: 'services', title: 'APP.TABS.SERVICE', hidden: true },
+    { path: 'contact', title: 'APP.TABS.CONTACT' }
   ];
-
   serviceTabs: Tab[] = [
-    { path: 'consultancy-service', title: 'Consultancy service' },
-    { path: 'software-service', title: 'Software service' },
-    { path: 'cloud-service', title: 'Cloud service' },
-    { path: 'ai-service', title: 'AI service' },
+    { path: 'consultancy-service', title: 'APP.SERVICE_TABS.CONSULTANCY_SERVICE' },
+    { path: 'software-service', title: 'APP.SERVICE_TABS.SOFTWARE_SERVICE' },
+    { path: 'cloud-service', title: 'APP.SERVICE_TABS.CLOUD_SERVICE' },
+    { path: 'ai-service', title: 'APP.SERVICE_TABS.AI_SERVICE' }
   ];
   constructor(
     private regIcon: RegisterIconService,
     private notification: NotificationService,
     private snackBar: MatSnackBar,
+    private translate: TranslateService
   ) {
     this.regIcon.registerIcons(appIcons);
   }
+
   ngOnInit(): void {
     this.showSuccessMessage();
     this.showErrorMessage();
+    this.languageHandler();
+  }
+
+  languageHandler() {
+    if (typeof localStorage !== 'undefined') {
+      const savedLanguage: string | null = localStorage.getItem('Language');
+      if (savedLanguage) {
+        this.translate.use(savedLanguage);
+      } else {
+        this.translate.setDefaultLang(LanguageEnum.EN);
+        localStorage.setItem('Language', LanguageEnum.EN); // Save default language to local storage
+      }
+    }
   }
 
   showSuccessMessage() {

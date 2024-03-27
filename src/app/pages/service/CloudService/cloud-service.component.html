@@ -3,15 +3,10 @@
     <div class="col-md-12">
       <div class="main-header-section-container">
         <h2>
-          Welcome to FinDev - Elevate Your Business to New Heights with Our
-          Cloud Solutions Consultancy.
+          {{ 'APP.SERVICE.CLOUD.WELCOME' | translate }}
         </h2>
         <div class="main-header-section-description">
-          At FinDev, we specialize in delivering tailored consultancy services
-          that empower businesses to harness the full potential of the cloud. In
-          an era where digital transformation is imperative for staying
-          competitive, our team is committed to guiding you on your journey
-          towards seamless, scalable, and secure cloud adoption.
+          {{ 'APP.SERVICE.CLOUD.WELCOME_DESC' | translate }}
         </div>
       </div>
     </div>
@@ -23,7 +18,7 @@
     <div class="col-md-12">
       <div class="main-section-container">
         <h3>
-          Our suite of cloud solutions covers a broad spectrum of services
+          {{ 'APP.SERVICE.CLOUD.SUITE_SOLUTIONS' | translate }}
         </h3>
         <div id="myCloudServiceContainer"></div>
         <app-cloud-canvas-icon
@@ -37,13 +32,14 @@
     <div class="col-md-4">
       <mat-card class="mat-card-container card-padding">
         <mat-card-header class="mat-card-header">
-          <mat-card-title>Data Management and Analytics</mat-card-title>
+          <mat-card-title>{{ 'APP.SERVICE.CLOUD.DATA_MNG' | translate }}</mat-card-title>
           <mat-icon class="findev-icon" svgIcon="data-management"></mat-icon>
         </mat-card-header>
         <mat-card-content>
           <div class="mat-card-content">
-            Harness the power of your data with advanced analytics solutions.<br />
-            Enable data-driven decision-making for a competitive edge.
+            {{ 'APP.SERVICE.CLOUD.HARNESS' | translate }}
+            <br />
+            {{ 'APP.SERVICE.CLOUD.DATA_DRIVEN' | translate }}
           </div>
         </mat-card-content>
       </mat-card>
@@ -51,14 +47,14 @@
     <div class="col-md-4">
       <mat-card class="mat-card-container card-padding">
         <mat-card-header class="mat-card-header">
-          <mat-card-title>Cloud Strategy and Planning</mat-card-title>
+          <mat-card-title>{{ 'APP.SERVICE.CLOUD.CLOUD_STRATEGY' | translate }}</mat-card-title>
           <mat-icon class="findev-icon" svgIcon="cloud-strategy"></mat-icon>
         </mat-card-header>
         <mat-card-content>
           <div class="mat-card-content">
-            Develop a clear roadmap for your cloud adoption journey.<br />
-            Align cloud strategies with your business objectives for maximum
-            impact.
+            {{ 'APP.SERVICE.CLOUD.CLEAR_ROADMAP' | translate }}
+            <br />
+            {{ 'APP.SERVICE.CLOUD.ALIGN_STRATEGIES' | translate }}
           </div>
         </mat-card-content>
       </mat-card>
@@ -66,13 +62,14 @@
     <div class="col-md-4">
       <mat-card class="mat-card-container card-padding">
         <mat-card-header class="mat-card-header">
-          <mat-card-title>Platform as a Service (PaaS)</mat-card-title>
+          <mat-card-title>{{ 'APP.SERVICE.CLOUD.PAAS' | translate }}</mat-card-title>
           <mat-icon class="findev-icon" svgIcon="paas"></mat-icon>
         </mat-card-header>
         <mat-card-content>
           <div class="mat-card-content">
-            Streamline application development and deployment processes.<br />
-            Enhance collaboration and innovation within your development teams.
+            {{ 'APP.SERVICE.CLOUD.STREAMLINE_APP' | translate }}
+            <br />
+            {{ 'APP.SERVICE.CLOUD.ENHANCE_COLL' | translate }}
           </div>
         </mat-card-content>
       </mat-card>
@@ -80,14 +77,14 @@
     <div class="col-md-4">
       <mat-card class="mat-card-container card-padding">
         <mat-card-header class="mat-card-header">
-          <mat-card-title>Infrastructure as a Service (IaaS)</mat-card-title>
+          <mat-card-title>{{ 'APP.SERVICE.CLOUD.IAAS' | translate }}</mat-card-title>
           <mat-icon class="findev-icon" svgIcon="iaas"></mat-icon>
         </mat-card-header>
         <mat-card-content>
           <div class="mat-card-content">
-            Leverage scalable and flexible infrastructure to meet evolving
-            business needs.<br />
-            Optimize resource utilization for cost efficiency.
+            {{ 'APP.SERVICE.CLOUD.LEVERAGE_SCALABLE' | translate }}
+            <br />
+            {{ 'APP.SERVICE.CLOUD.OPTIMIZE_RES' | translate }}
           </div>
         </mat-card-content>
       </mat-card>
@@ -99,21 +96,19 @@
   <div class="main-section-container why-us">
     <div class="row align-items-center">
       <div class="col-md-12">
-        <h3>Why choose us?</h3>
+        <h3>{{ 'APP.SERVICE.CLOUD.WHY_US' | translate }}</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
         <mat-card class="mat-card-container card-padding">
           <mat-card-header class="mat-card-header">
-            <mat-card-title>Innovation at the Core</mat-card-title>
+            <mat-card-title>{{ 'APP.SERVICE.CLOUD.INOVATION_CORE' | translate }}</mat-card-title>
             <mat-icon class="findev-icon" svgIcon="light-bulb"></mat-icon>
           </mat-card-header>
           <mat-card-content>
             <div class="mat-card-content">
-              We thrive on pushing the boundaries of technology, staying abreast
-              of the latest trends to deliver solutions that keep you ahead in
-              the digital race.
+              {{ 'APP.SERVICE.CLOUD.INNOVATION_CORE_DESC' | translate }}
             </div>
           </mat-card-content>
         </mat-card>
@@ -122,14 +117,12 @@
       <div class="col-md-4">
         <mat-card class="mat-card-container card-padding">
           <mat-card-header class="mat-card-header">
-            <mat-card-title>Collaborative Approach</mat-card-title>
+            <mat-card-title>{{ 'APP.SERVICE.CLOUD.COLLABORATIVE_APPROACH' | translate }}</mat-card-title>
             <mat-icon class="findev-icon" svgIcon="measuring-tape"></mat-icon>
           </mat-card-header>
           <mat-card-content>
             <div class="mat-card-content">
-              Your success is our success. We believe in collaborative
-              partnerships, working closely with you to ensure that our
-              solutions align seamlessly with your vision and objectives.
+              {{ 'APP.SERVICE.CLOUD.COLLABORATIVE_APPROACH_DESC' | translate }}
             </div>
           </mat-card-content>
         </mat-card>
@@ -138,14 +131,12 @@
       <div class="col-md-4">
         <mat-card class="mat-card-container card-padding">
           <mat-card-header class="mat-card-header">
-            <mat-card-title>Reliability</mat-card-title>
+            <mat-card-title>{{ 'APP.SERVICE.CLOUD.RELIABILITY' | translate }}</mat-card-title>
             <mat-icon class="findev-icon" svgIcon="shield"></mat-icon>
           </mat-card-header>
           <mat-card-content>
             <div class="mat-card-content">
-              Count on us for reliable and scalable cloud solutions that grow
-              with your business. Our commitment to excellence guarantees the
-              performance and availability of your cloud infrastructure.
+              {{ 'APP.SERVICE.CLOUD.RELIABILITY_DESC' | translate }}
             </div>
           </mat-card-content>
         </mat-card>
@@ -154,14 +145,12 @@
       <div class="col-md-4">
         <mat-card class="mat-card-container card-padding">
           <mat-card-header class="mat-card-header">
-            <mat-card-title>Expertise</mat-card-title>
+            <mat-card-title>{{ 'APP.SERVICE.CLOUD.EXPERTISE' | translate }}</mat-card-title>
             <mat-icon class="findev-icon" svgIcon="chart-upward"></mat-icon>
           </mat-card-header>
           <mat-card-content>
             <div class="mat-card-content">
-              Our team of certified cloud consultants brings a wealth of
-              experience in designing, implementing, and managing cloud
-              solutions for businesses across diverse industries.
+              {{ 'APP.SERVICE.CLOUD.EXPERTISE_DESC' | translate }}
             </div>
           </mat-card-content>
         </mat-card>

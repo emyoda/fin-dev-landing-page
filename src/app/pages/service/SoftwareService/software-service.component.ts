@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { SoftwareServiceSettingsIconsComponent } from '../../shared/software-service-canvas/software-service.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-software-service',
@@ -14,6 +15,7 @@ import { SoftwareServiceSettingsIconsComponent } from '../../shared/software-ser
     MatIconModule,
     SoftwareServiceSettingsIconsComponent,
     FooterComponent,
+    TranslateModule
   ],
   templateUrl: './software-service.component.html',
   styleUrls: ['./software-service.component.css'],
