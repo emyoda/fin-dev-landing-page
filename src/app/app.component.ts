@@ -19,6 +19,7 @@ import { LanguageSelectorComponent } from './utils/language-selector/language-se
 import { TranslationModule } from './services/translation.module';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageEnum } from './utils/enum/language-enum';
+import { TranslationService } from './services/translation.service';
 
 interface Tab {
   path: string;
@@ -49,6 +50,7 @@ interface Tab {
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  providers: [ TranslationService ]
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) menuTrigger: MatMenuTrigger | undefined;

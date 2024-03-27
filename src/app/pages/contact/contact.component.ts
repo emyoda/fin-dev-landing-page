@@ -22,6 +22,8 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { environment } from '../../../environments/environment';
 import { NotificationService } from '../shared/services/notification-service';
 import { MatrixRainComponent } from '../shared/matrix-canvas/matrix-canvas.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translation.service';
 
 interface ContactComponentForm {
   name: FormControl<string | null>;
@@ -42,6 +44,7 @@ interface ContactComponentForm {
     ReactiveFormsModule,
     FooterComponent,
     MatrixRainComponent,
+    TranslateModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
@@ -81,6 +84,7 @@ export class ContactComponent {
   constructor(
     private fb: FormBuilder,
     private notificationService: NotificationService,
+    private _t: TranslationService
   ) {}
 
   async onSubmit() {
@@ -92,15 +96,11 @@ export class ContactComponent {
         phone: this.phoneControl.value ?? '',
         message: this.messageControl.value ?? '',
       });
-      this.notificationService.showNormalMessage(
-        'Thank you for submitting form, We will contact you soon',
-      );
+      this.notificationService.showNormalMessage(this._t.T('APP.CONTACT.SUBMIT_SUCCEESS'));
     } catch (err) {
       console.error('Err => ', err);
       if (err) {
-        this.notificationService.showErrorMessage(
-          'Error while submitting form, Please try again or contact us directly via email',
-        );
+        this.notificationService.showErrorMessage(this._t.T('APP.CONTACT.SUBMIT_ERROR'));
       }
     } finally {
       this.form.reset();
@@ -125,30 +125,30 @@ export class ContactComponent {
 
   getErrorEmail() {
     if (this.emailControl.hasError('required')) {
-      return 'You must enter a value';
+      return this._t.T('APP.CONTACT.ENTER_VALUE');
     }
-    return this.emailControl.hasError('email') ? 'Not a valid email' : '';
+    return this.emailControl.hasError('email') ? this._t.T('APP.CONTACT.INVALID_EMAIL') : '';
   }
 
   getErrorName() {
     return this.nameControl.hasError('required')
-      ? 'You must enter a value'
+      ? this._t.T('APP.CONTACT.ENTER_VALUE')
       : '';
   }
 
   getErrorMessage() {
     if (this.messageControl.hasError('required')) {
-      return 'You must enter a value';
+      return this._t.T('APP.CONTACT.ENTER_VALUE');
     }
     if (this.messageControl.hasError('maxlength')) {
-      return 'Max length exceeded';
+      return this._t.T('APP.CONTACT.MAX_LENGTH');
     }
-    return this.messageControl.hasError('minlength') ? 'Message too short' : '';
+    return this.messageControl.hasError('minlength') ? this._t.T('APP.CONTACT.MESSAGE_SHORT') : '';
   }
 
   getPhoneErrorMessage() {
     if (this.phoneControl.hasError('invalidNumber')) {
-      return 'Invalid phone number format';
+      return this._t.T('APP.CONTACT.PHONE_INVALID');
     }
     return '';
   }

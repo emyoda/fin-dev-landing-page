@@ -79,9 +79,9 @@
             (click)="tabClicked()"
             [routerLink]="tab.path"
           >
-            <span class="menu-item" [class.active]="rla.isActive">{{
-              tab.title
-            }}</span>
+            <span class="menu-item" [class.active]="rla.isActive">
+              {{ tab.title | translate }}
+            </span>
           </a>
           <ng-template #serviceTab>
             <div class="service-mobile-container">
@@ -91,9 +91,9 @@
                 mat-list-item
                 (click)="toggleServiceTabs()"
               >
-                <span class="menu-item" [class.active]="rla.isActive">{{
-                  tab.title
-                }}</span>
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ tab.title | translate }}
+                </span>
               </a>
               <mat-icon
                 svgIcon="{{ showServiceTabs ? 'expand-less' : 'expand-more' }}"
@@ -111,13 +111,14 @@
                 *ngFor="let subTab of serviceTabs"
                 [routerLink]="subTab.path"
               >
-                <span class="menu-item" [class.active]="rla.isActive">{{
-                  subTab.title
-                }}</span>
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ subTab.title | translate }}
+                </span>
               </a>
             </ng-container>
           </ng-template>
         </ng-container>
+        <app-language-selector style="margin-left: 5px;"></app-language-selector>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
