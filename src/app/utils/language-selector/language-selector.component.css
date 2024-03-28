@@ -1,9 +1,21 @@
 .flag-icon {
-    width: 30px;
-    height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .selected-flag {
-    width: 50px;
-    height: 44px;
+  width: 80%;
+  height: 80%;
+}
+
+.flag-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.801) !important;
+  border: none;
+}
+
+.mat-button-toggle {
+  background-color: rgba(245, 245, 245, 0.801) !important;
 }

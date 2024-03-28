@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { Component } from "@angular/core";
+import { MatIconModule } from "@angular/material/icon";
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
 import {
   ReactiveFormsModule,
   AbstractControl,
@@ -11,19 +11,19 @@ import {
   Validators,
   ValidatorFn,
   ValidationErrors,
-} from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
-import { CommonModule } from '@angular/common';
+} from "@angular/forms";
+import { MatCardModule } from "@angular/material/card";
+import { CommonModule } from "@angular/common";
 
-import parsePhoneNumberFromString from 'libphonenumber-js';
-import emailjs from '@emailjs/browser';
+import parsePhoneNumberFromString from "libphonenumber-js";
+import emailjs from "@emailjs/browser";
 
-import { FooterComponent } from '../shared/footer/footer.component';
-import { environment } from '../../../environments/environment';
-import { NotificationService } from '../shared/services/notification-service';
-import { MatrixRainComponent } from '../shared/matrix-canvas/matrix-canvas.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../services/translation.service';
+import { FooterComponent } from "../shared/footer/footer.component";
+import { environment } from "../../../environments/environment";
+import { NotificationService } from "../shared/services/notification-service";
+import { MatrixRainComponent } from "../shared/matrix-canvas/matrix-canvas.component";
+import { TranslateModule } from "@ngx-translate/core";
+import { TranslationService } from "../shared/services/translation-service/translation.service";
 
 interface ContactComponentForm {
   name: FormControl<string | null>;
@@ -33,7 +33,7 @@ interface ContactComponentForm {
 }
 
 @Component({
-  selector: 'app-contact',
+  selector: "app-contact",
   standalone: true,
   imports: [
     CommonModule,
@@ -44,19 +44,19 @@ interface ContactComponentForm {
     ReactiveFormsModule,
     FooterComponent,
     MatrixRainComponent,
-    TranslateModule
+    TranslateModule,
   ],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css',
+  templateUrl: "./contact.component.html",
+  styleUrl: "./contact.component.css",
 })
 export class ContactComponent {
   form: FormGroup<ContactComponentForm> = new FormGroup({
-    name: this.fb.control('', { validators: [Validators.required] }),
-    email: this.fb.control('', {
+    name: this.fb.control("", { validators: [Validators.required] }),
+    email: this.fb.control("", {
       validators: [Validators.required, Validators.email],
     }),
-    phone: this.fb.control('', [this.phoneValidator()]),
-    message: this.fb.control('', {
+    phone: this.fb.control("", [this.phoneValidator()]),
+    message: this.fb.control("", {
       validators: [
         Validators.required,
         Validators.minLength(5),
@@ -66,41 +66,45 @@ export class ContactComponent {
   });
 
   get nameControl(): FormControl<string | null> {
-    return this.form.get('name') as FormControl<string | null>;
+    return this.form.get("name") as FormControl<string | null>;
   }
 
   get emailControl(): FormControl<string | null> {
-    return this.form.get('email') as FormControl<string | null>;
+    return this.form.get("email") as FormControl<string | null>;
   }
 
   get phoneControl(): FormControl<string | null> {
-    return this.form.get('phone') as FormControl<string | null>;
+    return this.form.get("phone") as FormControl<string | null>;
   }
 
   get messageControl(): FormControl<string | null> {
-    return this.form.get('message') as FormControl<string | null>;
+    return this.form.get("message") as FormControl<string | null>;
   }
 
   constructor(
     private fb: FormBuilder,
     private notificationService: NotificationService,
-    private _t: TranslationService
+    private ts: TranslationService
   ) {}
 
   async onSubmit() {
     emailjs.init(environment.publicKeyEmailJs);
     try {
       await emailjs.send(environment.serviceId, environment.templateId, {
-        name: this.nameControl.value ?? '',
-        email: this.emailControl.value ?? '',
-        phone: this.phoneControl.value ?? '',
-        message: this.messageControl.value ?? '',
+        name: this.nameControl.value ?? "",
+        email: this.emailControl.value ?? "",
+        phone: this.phoneControl.value ?? "",
+        message: this.messageControl.value ?? "",
       });
-      this.notificationService.showNormalMessage(this._t.T('APP.CONTACT.SUBMIT_SUCCEESS'));
+      this.notificationService.showNormalMessage(
+        this.ts.instant("APP.CONTACT.SUBMIT_SUCCEESS")
+      );
     } catch (err) {
-      console.error('Err => ', err);
+      console.error("Err => ", err);
       if (err) {
-        this.notificationService.showErrorMessage(this._t.T('APP.CONTACT.SUBMIT_ERROR'));
+        this.notificationService.showErrorMessage(
+          this.ts.instant("APP.CONTACT.SUBMIT_ERROR")
+        );
       }
     } finally {
       this.form.reset();
@@ -124,32 +128,36 @@ export class ContactComponent {
   }
 
   getErrorEmail() {
-    if (this.emailControl.hasError('required')) {
-      return this._t.T('APP.CONTACT.ENTER_VALUE');
+    if (this.emailControl.hasError("required")) {
+      return this.ts.instant("APP.CONTACT.ENTER_VALUE");
     }
-    return this.emailControl.hasError('email') ? this._t.T('APP.CONTACT.INVALID_EMAIL') : '';
+    return this.emailControl.hasError("email")
+      ? this.ts.instant("APP.CONTACT.INVALID_EMAIL")
+      : "";
   }
 
   getErrorName() {
-    return this.nameControl.hasError('required')
-      ? this._t.T('APP.CONTACT.ENTER_VALUE')
-      : '';
+    return this.nameControl.hasError("required")
+      ? this.ts.instant("APP.CONTACT.ENTER_VALUE")
+      : "";
   }
 
   getErrorMessage() {
-    if (this.messageControl.hasError('required')) {
-      return this._t.T('APP.CONTACT.ENTER_VALUE');
+    if (this.messageControl.hasError("required")) {
+      return this.ts.instant("APP.CONTACT.ENTER_VALUE");
     }
-    if (this.messageControl.hasError('maxlength')) {
-      return this._t.T('APP.CONTACT.MAX_LENGTH');
+    if (this.messageControl.hasError("maxlength")) {
+      return this.ts.instant("APP.CONTACT.MAX_LENGTH");
     }
-    return this.messageControl.hasError('minlength') ? this._t.T('APP.CONTACT.MESSAGE_SHORT') : '';
+    return this.messageControl.hasError("minlength")
+      ? this.ts.instant("APP.CONTACT.MESSAGE_SHORT")
+      : "";
   }
 
   getPhoneErrorMessage() {
-    if (this.phoneControl.hasError('invalidNumber')) {
-      return this._t.T('APP.CONTACT.PHONE_INVALID');
+    if (this.phoneControl.hasError("invalidNumber")) {
+      return this.ts.instant("APP.CONTACT.PHONE_INVALID");
     }
-    return '';
+    return "";
   }
 }

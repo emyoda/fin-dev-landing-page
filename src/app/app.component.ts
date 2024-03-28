@@ -1,25 +1,24 @@
-import { Component, OnInit, ViewChild, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { RegisterIconService } from './pages/shared/services/register-icons.service';
-import { appIcons } from './app-icons';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { NotificationService } from './pages/shared/services/notification-service';
-import { tap } from 'rxjs';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
-import { MatListModule } from '@angular/material/list';
-import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule } from '@angular/material/button';
-import { LanguageSelectorComponent } from './utils/language-selector/language-selector.component';
-import { TranslationModule } from './services/translation.module';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { LanguageEnum } from './utils/enum/language-enum';
-import { TranslationService } from './services/translation.service';
+import { Component, OnInit, ViewChild, signal } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterOutlet } from "@angular/router";
+import { RegisterIconService } from "./pages/shared/services/register-icons.service";
+import { appIcons } from "./app-icons";
+import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
+import { NotificationService } from "./pages/shared/services/notification-service";
+import { tap } from "rxjs";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
+import { MatIconModule } from "@angular/material/icon";
+import { RouterModule } from "@angular/router";
+import { MatListModule } from "@angular/material/list";
+import { MatSidenav, MatSidenavModule } from "@angular/material/sidenav";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatButtonModule } from "@angular/material/button";
+import { LanguageSelectorComponent } from "./utils/language-selector/language-selector.component";
+import { TranslationModule } from "./pages/shared/services/translation-service/translation.module";
+import { TranslateModule } from "@ngx-translate/core";
+import { TranslationService } from "./pages/shared/services/translation-service/translation.service";
 
 interface Tab {
   path: string;
@@ -28,7 +27,7 @@ interface Tab {
 }
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [
     CommonModule,
@@ -46,66 +45,57 @@ interface Tab {
     MatSidenavModule,
     FlexLayoutModule,
     MatButtonModule,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
   ],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [ TranslationService ]
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+  providers: [TranslationService],
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) menuTrigger: MatMenuTrigger | undefined;
-  @ViewChild('sidenav') sidenav!: MatSidenav;
+  @ViewChild("sidenav") sidenav!: MatSidenav;
   isMenuOpen = signal(false);
   isSideNavOpen = false;
   showServiceTabs = false;
   tabs: Tab[] = [
-    { path: 'home', title: 'APP.TABS.HOME' },
-    { path: 'about', title: 'APP.TABS.ABOUT' },
-    { path: 'services', title: 'APP.TABS.SERVICE', hidden: true },
-    { path: 'contact', title: 'APP.TABS.CONTACT' }
+    { path: "home", title: "APP.TABS.HOME" },
+    { path: "about", title: "APP.TABS.ABOUT" },
+    { path: "services", title: "APP.TABS.SERVICE", hidden: true },
+    { path: "contact", title: "APP.TABS.CONTACT" },
   ];
   serviceTabs: Tab[] = [
-    { path: 'consultancy-service', title: 'APP.SERVICE_TABS.CONSULTANCY_SERVICE' },
-    { path: 'software-service', title: 'APP.SERVICE_TABS.SOFTWARE_SERVICE' },
-    { path: 'cloud-service', title: 'APP.SERVICE_TABS.CLOUD_SERVICE' },
-    { path: 'ai-service', title: 'APP.SERVICE_TABS.AI_SERVICE' }
+    {
+      path: "consultancy-service",
+      title: "APP.SERVICE_TABS.CONSULTANCY_SERVICE",
+    },
+    { path: "software-service", title: "APP.SERVICE_TABS.SOFTWARE_SERVICE" },
+    { path: "cloud-service", title: "APP.SERVICE_TABS.CLOUD_SERVICE" },
+    { path: "ai-service", title: "APP.SERVICE_TABS.AI_SERVICE" },
   ];
   constructor(
     private regIcon: RegisterIconService,
     private notification: NotificationService,
     private snackBar: MatSnackBar,
-    private translate: TranslateService
+    private ts: TranslationService
   ) {
+    this.ts.setDefaultLanguage();
     this.regIcon.registerIcons(appIcons);
   }
 
   ngOnInit(): void {
     this.showSuccessMessage();
     this.showErrorMessage();
-    this.languageHandler();
-  }
-
-  languageHandler() {
-    if (typeof localStorage !== 'undefined') {
-      const savedLanguage: string | null = localStorage.getItem('Language');
-      if (savedLanguage) {
-        this.translate.use(savedLanguage);
-      } else {
-        this.translate.setDefaultLang(LanguageEnum.EN);
-        localStorage.setItem('Language', LanguageEnum.EN); // Save default language to local storage
-      }
-    }
   }
 
   showSuccessMessage() {
     this.notification.normalMessage$
       .pipe(
         tap((message) =>
-          this.snackBar.open(message, '', {
+          this.snackBar.open(message, "", {
             duration: 5000,
-            panelClass: ['success-message'],
-          }),
-        ),
+            panelClass: ["success-message"],
+          })
+        )
       )
       .subscribe();
   }
@@ -114,11 +104,11 @@ export class AppComponent implements OnInit {
     this.notification.errorMessage$
       .pipe(
         tap((message) =>
-          this.snackBar.open(message, '', {
+          this.snackBar.open(message, "", {
             duration: 5000,
-            panelClass: ['error-message'],
-          }),
-        ),
+            panelClass: ["error-message"],
+          })
+        )
       )
       .subscribe();
   }

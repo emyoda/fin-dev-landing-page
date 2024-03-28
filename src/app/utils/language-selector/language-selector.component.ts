@@ -1,48 +1,30 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { TranslateService } from '@ngx-translate/core';
-import { LanguageEnum } from '../enum/language-enum';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { TranslationService } from "../../pages/shared/services/translation-service/translation.service";
+import { LanguageEnum } from "../enum/language-enum";
 
 @Component({
-  selector: 'app-language-selector',
+  selector: "app-language-selector",
   standalone: true,
   imports: [MatButtonToggleModule, CommonModule],
-  templateUrl: './language-selector.component.html',
-  styleUrl: './language-selector.component.css'
+  templateUrl: "./language-selector.component.html",
+  styleUrl: "./language-selector.component.css",
 })
 export class LanguageSelectorComponent {
-  selectedLanguage: string | any; // Default language.
+  selectedLanguage = this.ts.selectedLanguage();
 
   LanguageEnum = LanguageEnum; // Expose enum to template
 
-  constructor(private translate: TranslateService) {
-  
-  }
-
-  ngOnInit() {
-    this.languageHandler();
-  }
-
-  languageHandler() {
-    if (typeof localStorage !== 'undefined') {
-      const savedLanguage: string | null = localStorage.getItem('Language');
-      if (savedLanguage) {
-        this.translate.use(savedLanguage);
-        this.selectedLanguage = savedLanguage
-      } else {
-        this.selectedLanguage = LanguageEnum.EN
-      }
-    }
+  constructor(private ts: TranslationService) {
+    this.ts.setDefaultLanguage();
   }
 
   changeLanguage(event: any) {
-    this.selectedLanguage = event.value;
-    this.translate.use(this.selectedLanguage);
-    localStorage.setItem('Language', event.value); // Save selected language to local storage
+    this.ts.setLanguage(event.value);
   }
 
   isSelected(language: string): boolean {
-    return this.selectedLanguage === language;
+    return this.ts.selectedLanguage() === language;
   }
 }

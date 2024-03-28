@@ -61,3 +61,7 @@ a {
   color: #3b3c68 !important;
   text-decoration: underline;
 }
+
+.nav-container {
+  background-color: rgba(245, 245, 245, 0.801) !important;
+}
