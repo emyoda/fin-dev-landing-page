@@ -167,3 +167,9 @@ form {
 .m-top {
   margin-top: 15rem;
 }
+
+.contact-us-container-main-image {
+  margin-top: -15%;
+  width: 70%;
+  margin-right: 5rem;
+}
