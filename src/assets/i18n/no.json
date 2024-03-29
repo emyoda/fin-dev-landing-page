@@ -1,22 +1,18 @@
 {
-  "APP": 
-  {
-    "TABS": 
-    {
+  "APP": {
+    "TABS": {
       "HOME": "Hjem",
       "ABOUT": "Om oss",
       "SERVICE": "Tjeneste",
       "CONTACT": "Kontakt oss"
     },
-    "SERVICE_TABS": 
-    {
+    "SERVICE_TABS": {
       "CONSULTANCY_SERVICE": "Konsulenttjeneste",
       "SOFTWARE_SERVICE": "Programvaretjeneste",
       "CLOUD_SERVICE": "Skytjeneste",
       "AI_SERVICE": "AI-tjeneste"
     },
-    "HOME": 
-    {
+    "HOME": {
       "WELCOME": "Velkommen til FinDev",
       "TRUSTED_PARTNER": "Din betrodde partner for innovative løsninger innen prosjektoutsourcing.",
       "TRANSFORMING_CHALLENGES": "Herausforderungen in Chancen verwandeln und Ideen in digitale Meisterwerke verwandeln.",
@@ -51,8 +47,7 @@
       "TRUSTED_PARTNERS": "Våre betrodde partnere",
       "TRUSTED_PARTNERS_DESC": "Noen av de ledende selskapene stoler på oss for å levere digitale løsninger som driver vekst og innovasjon."
     },
-    "ABOUT": 
-    {
+    "ABOUT": {
       "ABOUT_TITLE": "Om FinDev Albania",
       "ABOUT_DESC_1": "En ledende kraft i det albanske teknologilandskapet, dedikert til å levere toppmoderne digitale løsninger og fremme faglig utvikling i tech-bransjen.",
       "ABOUT_DESC_2": "På FinDev Albania ser vi for oss en fremtid der teknologi driver positiv endring. Vi er forpliktet til å være i forkant av denne transformasjonen, og bruker ekspertisen vår til å styrke bedrifter, enkeltpersoner og tech-fellesskapet som helhet.",
@@ -63,7 +58,7 @@
       "TECHNO": "Teknologier",
       "SPOKEN_LANGUAGES": "Talte språk",
       "MORE_NUMBERS": "Noen flere tall",
-      "MORE_NUMBERS_dETAILS": "Vi er et team av lidenskapelige fagpersoner med en felles visjon for fremtiden. Vårt mangfoldige team består av talentfulle individer med et bredt spekter av ferdigheter og ekspertise, alle dedikert til å levere eksepsjonelle digitale løsninger.",
+      "MORE_NUMBERS_DETAILS": "Vi er et team av lidenskapelige fagpersoner med en felles visjon for fremtiden. Vårt mangfoldige team består av talentfulle individer med et bredt spekter av ferdigheter og ekspertise, alle dedikert til å levere eksepsjonelle digitale løsninger.",
       "WHY_COLLABORATE": "Hvorfor samarbeide med FinDev Albania?",
       "PEOPLE_TRUST_US": "Folk stoler på oss",
       "PEOPLE_TRUST_US_DETAILS": "På grunn av vår transparente kommunikasjon, vår dokumenterte suksesshistorie og vår kundeorienterte tilnærming. Vår dedikasjon til kvalitet, samarbeidspartnerskap og tilpasningsdyktighet skaper tillit og gjør FinDev Albania til en betrodd partner for innovative og pålitelige digitale løsninger.",
@@ -76,8 +71,7 @@
       "PROVEN_TRACK": "Dokumentert suksesshistorie",
       "PROVEN_TRACK_DESC": "Stol på vår dokumenterte fremragende. Vi har vellykket levert transformative digitale løsninger innen ulike bransjer."
     },
-    "CONTACT": 
-    {
+    "CONTACT": {
       "YOUR_TECH_PARTNER": "Din teknologipartner",
       "TALENTED_TEAM": "Vårt talentfulle team kan hjelpe deg med å omgjøre ideen din til flotte ting. La oss utvikle fantastiske ting sammen.",
       "WHERE_TO_FIND_US": "Hvor du kan finne oss",
@@ -99,10 +93,8 @@
       "MESSAGE_SHORT": "Meldingen er for kort",
       "PHONE_INVALID": "Ugyldig telefonnummerformat"
     },
-    "SERVICE": 
-    {
-      "SOFTWARE": 
-      {
+    "SERVICE": {
+      "SOFTWARE": {
         "WELCOME": "Velkommen til FinDev - Øker Bedrifters Suksess gjennom innovasjon",
         "SOFTWARE_SOLUTIONS": "Programvareløsninger",
         "WELCOME_DESC": "På FinDev spesialiserer vi oss på å levere banebrytende programvaretjenester som gir bedrifter mulighet til å blomstre i dagens dynamiske digitale landskap. Med forpliktelse til ekspertise og lidenskap for innovasjon, bringer vi med oss rikelig med erfaring for å møte dine unike utfordringer og drive din suksess.",
@@ -126,8 +118,7 @@
         "RELIABILITY_SEC_DESC": "Tillit er avgjørende i IT-verdenen. Vi prioriterer sikkerheten og påliteligheten til våre løsninger og sikrer at dataene dine håndteres med største omhu og fortrolighet.",
         "PROVEN_TRACK": "Dokumentert suksesshistorie"
       },
-      "CLOUD": 
-      {
+      "CLOUD": {
         "WELCOME": "Velkommen til FinDev - Øk din virksomhet til nye høyder med vår rådgivning om skybaserte løsninger.",
         "WELCOME_DESC": "På FinDev spesialiserer vi oss på å levere skreddersydde rådgivningstjenester som gjør det mulig for virksomheter å utnytte fullt ut potensialet i skyen. I en tid der digital transformasjon er avgjørende for å være konkurransedyktig, er vårt team forpliktet til å veilede deg på din reise mot sømløs, skalerbar og sikker skyadopsjon.",
         "SUITE_SOLUTIONS": "Vårt utvalg av skybaserte løsninger dekker et bredt spekter av tjenester",
@@ -153,8 +144,7 @@
         "EXPERTISE": "Ekspertise",
         "EXPERTISE_DESC": "Vårt team av sertifiserte skykonsulenter bringer med seg rikelig med erfaring innen design, implementering og drift av skybaserte løsninger for virksomheter på tvers av ulike bransjer."
       },
-      "AI": 
-      {
+      "AI": {
         "WELCOME": "Velkommen til FinDev - Utfrigjøringen av AI-kraften",
         "WELCOME_DESC": "På FinDev er vi i frontlinjen av innovasjon, og vi utnytter det utrolige potensialet til Kunstig Intelligens (AI) for å transformere virksomheter og løfte dem til nye høyder. Vår omfattende pakke med AI-tjenester er designet for å styrke organisasjonen din, øke effektiviteten og låse opp uovertrufne muligheter.",
         "AI_EXPERTISE": "Vår AI-ekspertise",
@@ -179,8 +169,7 @@
         "PROVEN_TRACK_DESC": "Vår track record taler for seg selv. Mange fornøyde kunder har opplevd konkrete fordeler med våre AI-tjenester, fra økt effektivitet til betydelig forretningsvekst."
       }
     },
-    "FOOTER": 
-    {
+    "FOOTER": {
       "GET_STARTED": "Kom i gang med et prosjekt med oss",
       "READY_TO_TURN": "Klar til å gjøre visjonen din til virkelighet? Kontakt oss i dag for å diskutere prosjektmålene dine og oppdage mulighetene vi kan skape for bedriften din.",
       "CONTACT_US": "Kontakt oss",

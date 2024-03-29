@@ -9,19 +9,21 @@
             class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
           >
             <div class="slider-content position-relative z-index11">
-              <span class="f-700 theme-color d-block pb-1">{{ 'APP.HOME.WELCOME' | translate }}</span>
+              <span class="f-700 theme-color d-block pb-1">{{
+                "APP.HOME.WELCOME" | translate
+              }}</span>
               <h1 class="f-700 pb-22 pr-0">
-                {{ 'APP.HOME.TRUSTED_PARTNER' | translate }}
+                {{ "APP.HOME.TRUSTED_PARTNER" | translate }}
               </h1>
               <p>
-                {{ 'APP.HOME.TRANSFORMING_CHALLENGES' | translate }}
+                {{ "APP.HOME.TRANSFORMING_CHALLENGES" | translate }}
               </p>
               <div class="my-btn mt-47">
                 <a
                   [routerLink]="['/about']"
                   routerLinkActive="router-link-active"
                   class="btn theme-bg text-capitalize f-18 f-700"
-                >{{ 'APP.HOME.ABOUT_US' | translate }}
+                  >{{ "APP.HOME.ABOUT_US" | translate }}
                 </a>
               </div>
             </div>
@@ -30,23 +32,35 @@
             class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
           >
             <div class="slider-img1 pl-65 z-index1 position-relative">
-              <app-matrix-rain></app-matrix-rain>
+              <video
+                #videoPlayer
+                class="video-main"
+                [loop]="true"
+                [muted]="true"
+                [volume]="0.2"
+                [autoplay]="true"
+              >
+                <source
+                  src="assets/videos/compressed-computer.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="intro-area home3 mt-160 mb-145">
+  <div class="intro-area home3 pt-30 pb-30">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12">
           <div class="title text-center">
-            <h2 class="f-700"> 
-              {{ 'APP.HOME.OUR_MISSION' | translate }}
+            <h2 class="f-700">
+              {{ "APP.HOME.OUR_MISSION" | translate }}
             </h2>
-            <p> 
-              {{ 'APP.HOME.OUR_MISSION_DESC' | translate }}
+            <p>
+              {{ "APP.HOME.OUR_MISSION_DESC" | translate }}
             </p>
           </div>
         </div>
@@ -62,9 +76,11 @@
               <mat-icon svgIcon="chart-upward" class="findev-icon"></mat-icon>
             </div>
             <div class="home3-intro-text">
-              <h3 class="f-700 mb-25">{{ 'APP.HOME.EMPOWERING_GROWTH' | translate }}</h3>
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.EMPOWERING_GROWTH" | translate }}
+              </h3>
               <p class="mb-2">
-                {{ 'APP.HOME.EMPOWERING_GROWTH_DESC' | translate }}
+                {{ "APP.HOME.EMPOWERING_GROWTH_DESC" | translate }}
               </p>
             </div>
           </div>
@@ -79,9 +95,11 @@
               <mat-icon svgIcon="light-bulb" class="findev-icon"></mat-icon>
             </div>
             <div class="home3-intro-text">
-              <h3 class="f-700 mb-25">{{ 'APP.HOME.CLIENT_CENTRIC_APPROACH' | translate }}</h3>
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.CLIENT_CENTRIC_APPROACH" | translate }}
+              </h3>
               <p class="mb-2">
-                {{ 'APP.HOME.CLIENT_CENTRIC_APPROACH_DESC' | translate }}
+                {{ "APP.HOME.CLIENT_CENTRIC_APPROACH_DESC" | translate }}
               </p>
             </div>
           </div>
@@ -96,9 +114,11 @@
               <mat-icon svgIcon="measuring-tape" class="findev-icon"></mat-icon>
             </div>
             <div class="home3-intro-text">
-              <h3 class="f-700 mb-25">{{ 'APP.HOME.CULTIVATING_EXCELLENCE' | translate }}</h3>
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.CULTIVATING_EXCELLENCE" | translate }}
+              </h3>
               <p class="mb-2">
-                {{ 'APP.HOME.CULTIVATING_EXCELLENCE_DESC' | translate }}
+                {{ "APP.HOME.CULTIVATING_EXCELLENCE_DESC" | translate }}
               </p>
             </div>
           </div>
@@ -116,9 +136,11 @@
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="about-left-content mb-50">
               <div class="title">
-                <span class="theme-color f-700">{{ 'APP.HOME.LEARN_MORE_ABOUT_US' | translate }}</span>
+                <span class="theme-color f-700">{{
+                  "APP.HOME.LEARN_MORE_ABOUT_US" | translate
+                }}</span>
                 <p class="pb-10">
-                  {{ 'APP.HOME.LEARN_MORE_ABOUT_US_DESC' | translate }}
+                  {{ "APP.HOME.LEARN_MORE_ABOUT_US_DESC" | translate }}
                 </p>
               </div>
               <div class="my-btn mt-47">
@@ -127,7 +149,7 @@
                   routerLinkActive="router-link-active"
                   fragment="top"
                   class="btn theme-bg text-capitalize f-18 f-700"
-                >{{ 'APP.HOME.VIEW_MORE' | translate }}</a
+                  >{{ "APP.HOME.VIEW_MORE" | translate }}</a
                 >
               </div>
             </div>
@@ -159,9 +181,9 @@
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-12">
           <div class="title text-center">
-            <h2 class="f-700">{{ 'APP.HOME.OUR_SERVICES' | translate }}</h2>
+            <h2 class="f-700">{{ "APP.HOME.OUR_SERVICES" | translate }}</h2>
             <h4 class="secondary-color f-500 mt-20">
-              {{ 'APP.HOME.OUR_SERVICES_DESC' | translate }}
+              {{ "APP.HOME.OUR_SERVICES_DESC" | translate }}
             </h4>
           </div>
         </div>
@@ -181,15 +203,17 @@
                   </span>
                 </div>
                 <div class="service-text z-index1">
-                  <h5 class="f-700 pb-15">{{ 'APP.HOME.CUSTOM_SOFTWARE_DEV' | translate }}</h5>
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.CUSTOM_SOFTWARE_DEV" | translate }}
+                  </h5>
                   <p class="mb-35">
-                    {{ 'APP.HOME.CUSTOM_SOFTWARE_DEV_DESC' | translate }}
+                    {{ "APP.HOME.CUSTOM_SOFTWARE_DEV_DESC" | translate }}
                   </p>
                   <a
                     [routerLink]="['/software-service']"
                     class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
                   >
-                    {{ 'APP.HOME.VIEW_SERVICE' | translate }}
+                    {{ "APP.HOME.VIEW_SERVICE" | translate }}
                     <span class="pl-2"
                       ><i class="fal fa-long-arrow-right"></i
                     ></span>
@@ -211,14 +235,16 @@
                   </span>
                 </div>
                 <div class="service-text z-index1">
-                  <h5 class="f-700 pb-15"> {{ 'APP.HOME.MOBILE_APP_DEV' | translate }}</h5>
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.MOBILE_APP_DEV" | translate }}
+                  </h5>
                   <p class="mb-35">
-                    {{ 'APP.HOME.MOBILE_APP_DEV_DESC' | translate }}
+                    {{ "APP.HOME.MOBILE_APP_DEV_DESC" | translate }}
                   </p>
                   <a
                     [routerLink]="['/software-service']"
                     class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
-                    >{{ 'APP.HOME.VIEW_SERVICE' | translate }}
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
                     <span class="pl-2"
                       ><i class="fal fa-long-arrow-right"></i
                     ></span>
@@ -240,14 +266,16 @@
                   </span>
                 </div>
                 <div class="service-text z-index1">
-                  <h5 class="f-700 pb-15">{{ 'APP.HOME.WEB_APP_DEV' | translate }}</h5>
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.WEB_APP_DEV" | translate }}
+                  </h5>
                   <p class="mb-35">
-                    {{ 'APP.HOME.WEB_APP_DEV_DESC' | translate }}
+                    {{ "APP.HOME.WEB_APP_DEV_DESC" | translate }}
                   </p>
                   <a
                     [routerLink]="['/software-service']"
                     class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
-                    >{{ 'APP.HOME.VIEW_SERVICE' | translate }}
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
                     <span class="pl-2"
                       ><i class="fal fa-long-arrow-right"></i
                     ></span>
@@ -272,9 +300,12 @@
                   </span>
                 </div>
                 <div class="service-text z-index1">
-                  <h5 class="f-700 pb-15">{{ 'APP.HOME.CLOUD_STRATEGY' | translate }}Cloud Strategy and Planning</h5>
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.CLOUD_STRATEGY" | translate }}Cloud Strategy
+                    and Planning
+                  </h5>
                   <p class="mb-35">
-                    {{ 'APP.HOME.CLOUD_SERVICE_DESC' | translate }}
+                    {{ "APP.HOME.CLOUD_SERVICE_DESC" | translate }}
                     Develop a clear roadmap for your cloud adoption journey.<br />
                     Align cloud strategies with your business objectives for
                     maximum impact.
@@ -282,7 +313,7 @@
                   <a
                     [routerLink]="['/cloud-service']"
                     class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
-                    >{{ 'APP.HOME.VIEW_SERVICE' | translate }}
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
                     <span class="pl-2"
                       ><i class="fal fa-long-arrow-right"></i
                     ></span>
@@ -301,7 +332,7 @@
         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-10 col-12">
           <div class="title text-center">
             <h3 class="f-700 pb-30">
-              {{ 'APP.HOME.YEARS_OF_EXPERIENCE' | translate }}
+              {{ "APP.HOME.YEARS_OF_EXPERIENCE" | translate }}
             </h3>
           </div>
         </div>
@@ -315,7 +346,9 @@
               <span class="f-700 d-inline-block">7</span>
               <span class="per d-inline-block f-700">+</span>
             </div>
-            <p class="black-color text-center f-700 mb-0 mt-1">{{ 'APP.HOME.YEARS' | translate }}</p>
+            <p class="black-color text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.YEARS" | translate }}
+            </p>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -327,7 +360,7 @@
               <span class="per text-white d-inline-block f-700">+</span>
             </div>
             <p class="text-white text-center f-700 mb-0 mt-1">
-              {{ 'APP.HOME.IN_HOUSE_PROJECTS' | translate }}
+              {{ "APP.HOME.IN_HOUSE_PROJECTS" | translate }}
             </p>
           </div>
         </div>
@@ -339,7 +372,9 @@
               <span class="f-700 d-inline-block">50</span>
               <span class="d-inline-block f-700">+</span>
             </div>
-            <p class="black-color text-center f-700 mb-0 mt-1">{{ 'APP.HOME.CUSTOMERS' | translate }}</p>
+            <p class="black-color text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.CUSTOMERS" | translate }}
+            </p>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
@@ -351,7 +386,7 @@
               <span class="per text-white d-inline-block f-700">%</span>
             </div>
             <p class="text-white text-center f-700 mb-0 mt-1">
-              {{ 'APP.HOME.CUSTOMERS_SATISFACTION' | translate }}
+              {{ "APP.HOME.CUSTOMERS_SATISFACTION" | translate }}
             </p>
           </div>
         </div>
@@ -363,9 +398,11 @@
       <div class="row align-items-start justify-content-center">
         <div class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-12">
           <div class="title text-center">
-            <h3 class="f-700 mb-30">{{ 'APP.HOME.TRUSTED_PARTNERS' | translate }}</h3>
+            <h3 class="f-700 mb-30">
+              {{ "APP.HOME.TRUSTED_PARTNERS" | translate }}
+            </h3>
             <p class="pb-10">
-              {{ 'APP.HOME.TRUSTED_PARTNERS_DESC' | translate }}
+              {{ "APP.HOME.TRUSTED_PARTNERS_DESC" | translate }}
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 <div>
+  <!--
   <div class="slider-area position-relative primary-bg">
     <div class="single-page page-height d-flex align-items-center">
       <div class="container">
@@ -17,21 +18,24 @@
       </div>
     </div>
   </div>
-  <div class="about-us-about-area pt-200 pb-30 over-hidden">
+-->
+  <div class="about-us-about-area pt-200 over-hidden">
     <div class="container">
       <div class="row align-items-start justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
           <div class="about-us-left-content mb-65">
             <div class="title">
-              <span class="theme-color f-700">{{ 'APP.ABOUT.ABOUT_TITLE' | translate }}</span>
+              <span class="theme-color f-700">{{
+                "APP.ABOUT.ABOUT_TITLE" | translate
+              }}</span>
               <h3 class="f-700 mb-30">
-                {{ 'APP.ABOUT.ABOUT_DESC_1' | translate }}
+                {{ "APP.ABOUT.ABOUT_DESC_1" | translate }}
               </h3>
               <p class="pb-10">
-                {{ 'APP.ABOUT.ABOUT_DESC_2' | translate }}
+                {{ "APP.ABOUT.ABOUT_DESC_2" | translate }}
               </p>
               <p>
-                {{ 'APP.ABOUT.ABOUT_DESC_3' | translate }}
+                {{ "APP.ABOUT.ABOUT_DESC_3" | translate }}
               </p>
             </div>
           </div>
@@ -41,10 +45,10 @@
             class="about-us-img-wrapper mt-18 mb-100 d-flex justify-content-end ml-100"
           >
             <div
-              class="home3-about-img bg-transparent position-relative z-index11 tilt"
+              class="home3-about-img about-us-container-main-image bg-transparent position-relative z-index11 tilt"
             >
               <img
-                class="about-us-img1 d-inline-block z-index-1"
+                class="about-us-img1 about-us-main-image d-inline-block z-index-1"
                 src="assets/images/findev/about-1.jpeg"
                 alt="image"
               />
@@ -54,7 +58,7 @@
                 <div class="about-us-marker-text">
                   <h4 class="f-700 text-center">
                     <span class="theme-color d-block">18+</span>
-                    {{ 'APP.ABOUT.ASSOCIATES' | translate }}
+                    {{ "APP.ABOUT.ASSOCIATES" | translate }}
                   </h4>
                 </div>
               </div>
@@ -71,8 +75,8 @@
       </div>
     </div>
   </div>
-  <div class="home3-facts-area about-us-fact-area about-us-fact-bg">
-    <div class="about-us-fact-bg bg-no-repeat pt-150 pb-140 findev-background">
+  <div class="home3-facts-area">
+    <div class="about-us-fact-bg bg-no-repeat pt-30 pb-30 findev-background">
       <div class="container">
         <div
           class="row align-items-center justify-content-center flex-column-reverse flex-lg-row"
@@ -87,7 +91,9 @@
                     <span class="theme-color f-700 d-inline-block">15</span>
                     <span class="per theme-color d-inline-block f-700">+</span>
                   </div>
-                  <p class="black-color text-center f-700 mb-0">{{ 'APP.ABOUT.SERVICES' | translate }}</p>
+                  <p class="black-color text-center f-700 mb-0">
+                    {{ "APP.ABOUT.SERVICES" | translate }}
+                  </p>
                 </div>
                 <div
                   class="home3-single-facts about-us-fact-wrapper white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30"
@@ -97,7 +103,7 @@
                     <span class="theme-color d-inline-block f-700">+</span>
                   </div>
                   <p class="black-color text-center f-700 mb-0">
-                    {{ 'APP.ABOUT.OPERATING_COUNTRIES' | translate }}
+                    {{ "APP.ABOUT.OPERATING_COUNTRIES" | translate }}
                   </p>
                 </div>
               </div>
@@ -109,7 +115,9 @@
                     <span class="theme-color f-700 d-inline-block">10</span>
                     <span class="per theme-color d-inline-block f-700">+</span>
                   </div>
-                  <p class="black-color text-center f-700 mb-0">{{ 'APP.ABOUT.TECHNO' | translate }}</p>
+                  <p class="black-color text-center f-700 mb-0">
+                    {{ "APP.ABOUT.TECHNO" | translate }}
+                  </p>
                 </div>
                 <div
                   class="home3-single-facts about-us-fact-wrapper white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30"
@@ -119,7 +127,7 @@
                     <span class="per theme-color d-inline-block f-700">+</span>
                   </div>
                   <p class="black-color text-center f-700 mb-0">
-                    {{ 'APP.ABOUT.SPOKEN_LANGUAGES' | translate }}
+                    {{ "APP.ABOUT.SPOKEN_LANGUAGES" | translate }}
                   </p>
                 </div>
               </div>
@@ -127,9 +135,11 @@
           </div>
           <div class="col-xl-5 offset-xl-1 col-lg-5 col-md-12 col-sm-12 col-12">
             <div class="title">
-              <span class="theme-color f-700">{{ 'APP.ABOUT.MORE_NUMBERS' | translate }}</span>
+              <span class="theme-color f-700">{{
+                "APP.ABOUT.MORE_NUMBERS" | translate
+              }}</span>
               <p class="pb-10">
-                {{ 'APP.ABOUT.MORE_NUMBERS_DETAILS' | translate }}
+                {{ "APP.ABOUT.MORE_NUMBERS_DETAILS" | translate }}
               </p>
             </div>
           </div>
@@ -137,16 +147,20 @@
       </div>
     </div>
   </div>
-  <div class="speciality-area about-page pt-155 pb-105 over-hidden">
+  <div class="speciality-area about-page pt-30 pb-30 over-hidden">
     <div class="container">
       <div class="row align-items-start">
         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
           <div class="Speciality-left-content mb-20">
             <div class="title">
-              <span class="theme-color f-700">{{ 'APP.ABOUT.WHY_COLLABORATE' | translate }}</span>
-              <h3 class="f-700 mb-30">{{ 'APP.ABOUT.PEOPLE_TRUST_US' | translate }}</h3>
+              <span class="theme-color f-700">{{
+                "APP.ABOUT.WHY_COLLABORATE" | translate
+              }}</span>
+              <h3 class="f-700 mb-30">
+                {{ "APP.ABOUT.PEOPLE_TRUST_US" | translate }}
+              </h3>
               <p class="pb-10">
-                {{ 'APP.ABOUT.PEOPLE_TRUST_US_DETAILS' | translate }}
+                {{ "APP.ABOUT.PEOPLE_TRUST_US_DETAILS" | translate }}
               </p>
             </div>
           </div>
@@ -162,9 +176,11 @@
                     <mat-icon svgIcon="rocket" class="findev-icon"></mat-icon>
                   </div>
                   <div class="service-text">
-                    <h6 class="f-700 mb-15">{{ 'APP.ABOUT.INNOVATIVE_SOLUTIONS' | translate }}</h6>
+                    <h6 class="f-700 mb-15">
+                      {{ "APP.ABOUT.INNOVATIVE_SOLUTIONS" | translate }}
+                    </h6>
                     <p>
-                      {{ 'APP.ABOUT.INNOVATIVE_SOLUTIONS_DESC' | translate }}
+                      {{ "APP.ABOUT.INNOVATIVE_SOLUTIONS_DESC" | translate }}
                     </p>
                   </div>
                 </div>
@@ -180,9 +196,13 @@
                     ></mat-icon>
                   </div>
                   <div class="service-text">
-                    <h6 class="f-700 mb-15">{{ 'APP.ABOUT.COLLABORATIVE_EXCELLENCE' | translate }}</h6>
+                    <h6 class="f-700 mb-15">
+                      {{ "APP.ABOUT.COLLABORATIVE_EXCELLENCE" | translate }}
+                    </h6>
                     <p>
-                      {{ 'APP.ABOUT.COLLABORATIVE_EXCELLENCE_DESC' | translate }}
+                      {{
+                        "APP.ABOUT.COLLABORATIVE_EXCELLENCE_DESC" | translate
+                      }}
                     </p>
                   </div>
                 </div>
@@ -198,9 +218,11 @@
                     ></mat-icon>
                   </div>
                   <div class="service-text">
-                    <h6 class="f-700 mb-15">{{ 'APP.ABOUT.TAILORED_FOR_SUCCESS' | translate }}</h6>
+                    <h6 class="f-700 mb-15">
+                      {{ "APP.ABOUT.TAILORED_FOR_SUCCESS" | translate }}
+                    </h6>
                     <p>
-                      {{ 'APP.ABOUT.TAILORED_FOR_SUCCESS_DESC' | translate }}
+                      {{ "APP.ABOUT.TAILORED_FOR_SUCCESS_DESC" | translate }}
                     </p>
                   </div>
                 </div>
@@ -216,9 +238,11 @@
                     ></mat-icon>
                   </div>
                   <div class="service-text">
-                    <h6 class="f-700 mb-15">{{ 'APP.ABOUT.PROVEN_TRACK' | translate }}</h6>
+                    <h6 class="f-700 mb-15">
+                      {{ "APP.ABOUT.PROVEN_TRACK" | translate }}
+                    </h6>
                     <p>
-                      {{ 'APP.ABOUT.PROVEN_TRACK_DESC' | translate }}
+                      {{ "APP.ABOUT.PROVEN_TRACK_DESC" | translate }}
                     </p>
                   </div>
                 </div>
@@ -229,125 +253,5 @@
       </div>
     </div>
   </div>
-  <!-- <div class="our-team-area about-us-team">
-    <div class="our-team-bg bg-no-repeat pt-160" data-background="assets/images/bg/about-us-team-bg.png">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-12">
-            <div class="title text-center">
-              <span class="theme-color f-700">Team Members</span>
-              <h4 class="f-700 mb-30">Our Amazing Team</h4>
-              <p>
-                Phasellus seiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row our-team-wrapper-margin pt-55">
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="our-team-wrapper position-relative mb-40">
-              <div class="single-team-img position-relative z-index1">
-                <img class="w-100" src="assets/images/team/team-img1.png" alt="image" />
-                <ul class="our-team-social-link text-center position-absolute left-0 right-0 z-index11 transition5">
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="our-team-info transition5 position-absolute left-0 right-0 white-bg pl-25 pt-90 pb-15 pr-25">
-                <span class="secondary-color">Founder & CEO</span>
-                <h3 class="mt-1 f-700">Paul Harrison</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="our-team-wrapper position-relative mb-40">
-              <div class="single-team-img position-relative z-index1">
-                <img class="w-100" src="assets/images/team/team-img2.png" alt="image" />
-                <ul class="our-team-social-link text-center position-absolute left-0 right-0 z-index11 transition5">
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="our-team-info transition5 position-absolute left-0 right-0 white-bg pl-25 pt-90 pb-15 pr-25">
-                <span class="secondary-color">Founder & CTO</span>
-                <h3 class="mt-1 f-700">Palmar Mew</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="our-team-wrapper position-relative mb-40">
-              <div class="single-team-img position-relative z-index1">
-                <img class="w-100" src="assets/images/team/team-img3.png" alt="image" />
-                <ul class="our-team-social-link text-center position-absolute left-0 right-0 z-index11 transition5">
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="our-team-info transition5 position-absolute left-0 right-0 white-bg pl-25 pt-90 pb-15 pr-25">
-                <span class="secondary-color">General Manager</span>
-                <h3 class="mt-1 f-700">Tom Anderson</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="our-team-wrapper position-relative mb-40">
-              <div class="single-team-img position-relative z-index1">
-                <img class="w-100" src="assets/images/team/team-img4.png" alt="image" />
-                <ul class="our-team-social-link text-center position-absolute left-0 right-0 z-index11 transition5">
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="d-inline-block">
-                    <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="#"><i
-                        class="fab fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="our-team-info transition5 position-absolute left-0 right-0 white-bg pl-25 pt-90 pb-15 pr-25">
-                <span class="secondary-color">HR Manager</span>
-                <h3 class="mt-1 f-700">Sarah Palmar</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </div>
 <app-footer></app-footer>

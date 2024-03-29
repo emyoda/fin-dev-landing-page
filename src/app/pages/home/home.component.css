@@ -23,3 +23,10 @@
   display: flex;
   justify-content: center;
 }
+
+.video-main {
+  width: 80%;
+  max-width: 800px;
+  height: 30%;
+  background-color: transparent;
+}

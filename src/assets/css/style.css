@@ -2204,7 +2204,6 @@ input:checked + .slider::before {
   height: 181px;
   right: -100px;
   top: -70px;
-  display: table-cell;
   vertical-align: middle;
 }
 .about-us-marker h3 {

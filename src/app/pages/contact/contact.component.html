@@ -8,23 +8,50 @@
           class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
         >
           <div class="slider-content position-relative z-index11">
-            <span class="f-700 theme-color d-block pb-1">{{ 'APP.CONTACT.YOUR_TECH_PARTNER' | translate }}</span>
+            <span class="f-700 theme-color d-block pb-1">{{
+              "APP.CONTACT.YOUR_TECH_PARTNER" | translate
+            }}</span>
             <h1 class="f-700 pb-22 pr-0">
-              {{ 'APP.CONTACT.TALENTED_TEAM' | translate }}
+              {{ "APP.CONTACT.TALENTED_TEAM" | translate }}
             </h1>
           </div>
         </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div
+            class="home3-about-img-wrapper-margin mb-10 m-top d-flex justify-content-end"
+          >
+            <div
+              class="home3-about-img bg-transparent tilt position-relative z-index11"
+            >
+              <img
+                class="about-img1 position-absolute d-inline-block z-index1"
+                src="assets/images/contacts/contact-us-main.png"
+                alt="image"
+              />
+              <div
+                class="home3-about-img-border bg-transparent z-index-1"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 
         <div
           class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
         >
           <div class="slider-img1 pl-65 z-index1 position-relative">
-            <app-matrix-rain
+            <img
+              class="about-img1 position-absolute d-inline-block z-index1"
+              src="assets/images/contacts/contact-us-main.png"
+              alt="image"
+            />
+           <app-matrix-rain
               [fromContact]="true"
               [fromHome]="false"
               givenWord="CONTACT US"
             ></app-matrix-rain>
           </div>
         </div>
+           -->
       </div>
     </div>
   </div>
@@ -33,23 +60,26 @@
   <div class="col-12 col-md-6 flexer">
     <mat-card class="mat-card-container">
       <mat-card-header class="full-w">
-        <mat-card-title>{{ 'APP.CONTACT.WHERE_TO_FIND_US' | translate }}</mat-card-title>
+        <mat-card-title>{{
+          "APP.CONTACT.WHERE_TO_FIND_US" | translate
+        }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <div class="contact-info-container">
           <div class="contact-info-container-col">
             <mat-icon svgIcon="location" class="findev-icon-sm"></mat-icon>
             <div>
-              <h4>{{ 'APP.CONTACT.LOCATION' | translate }}</h4>
+              <h4>{{ "APP.CONTACT.LOCATION" | translate }}</h4>
               <div class="location-text">
-                {{ 'APP.CONTACT.STREET' | translate }} Muhamet Gjollesha 1001, Tirana, Albania
+                {{ "APP.CONTACT.STREET" | translate }} Muhamet Gjollesha 1001,
+                Tirana, Albania
               </div>
             </div>
           </div>
           <div class="contact-info-container-col">
             <mat-icon svgIcon="email" class="findev-icon-sm"></mat-icon>
             <div>
-              <h4>{{ 'APP.CONTACT.EMAIL' | translate }}</h4>
+              <h4>{{ "APP.CONTACT.EMAIL" | translate }}</h4>
               <div>
                 <a href="mailto:info@findevpartners.al">
                   info&#64;findevpartners.al
@@ -62,7 +92,7 @@
           >
             <mat-icon svgIcon="phone" class="findev-icon-sm"></mat-icon>
             <div>
-              <h4>{{ 'APP.CONTACT.PHONE' | translate }}</h4>
+              <h4>{{ "APP.CONTACT.PHONE" | translate }}</h4>
               <div>
                 <a href="tel:+355682045039"> +355682045039 </a>
               </div>
@@ -76,12 +106,14 @@
   <div class="col-12 col-md-6 flexer">
     <mat-card class="mat-card-container">
       <mat-card-header>
-        <mat-card-title>{{ 'APP.CONTACT.FILL_FORM' | translate }}</mat-card-title>
+        <mat-card-title>{{
+          "APP.CONTACT.FILL_FORM" | translate
+        }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <form [formGroup]="form">
           <mat-form-field>
-            <mat-label>{{ 'APP.CONTACT.NAME' | translate }}</mat-label>
+            <mat-label>{{ "APP.CONTACT.NAME" | translate }}</mat-label>
             <input matInput formControlName="name" />
             <mat-icon
               *ngIf="nameControl.enabled && nameControl.value"
@@ -95,7 +127,7 @@
             }
           </mat-form-field>
           <mat-form-field>
-            <mat-label>{{ 'APP.CONTACT.EMAIL' | translate }}</mat-label>
+            <mat-label>{{ "APP.CONTACT.EMAIL" | translate }}</mat-label>
             <input matInput formControlName="email" />
             <mat-icon
               *ngIf="emailControl.enabled && emailControl.value"
@@ -109,7 +141,7 @@
             }
           </mat-form-field>
           <mat-form-field>
-            <mat-label>{{ 'APP.CONTACT.PHONE' | translate }}</mat-label>
+            <mat-label>{{ "APP.CONTACT.PHONE" | translate }}</mat-label>
             <input matInput formControlName="phone" />
             <mat-icon
               *ngIf="phoneControl.enabled && phoneControl.value"
@@ -118,13 +150,13 @@
               svgIcon="clear"
             >
             </mat-icon>
-            <mat-hint>{{ 'APP.CONTACT.PREFIX' | translate }}</mat-hint>
+            <mat-hint>{{ "APP.CONTACT.PREFIX" | translate }}</mat-hint>
             @if (phoneControl.invalid) {
               <mat-error>{{ getPhoneErrorMessage() }}</mat-error>
             }
           </mat-form-field>
           <mat-form-field>
-            <mat-label>{{ 'APP.CONTACT.MESSAGE' | translate }}</mat-label>
+            <mat-label>{{ "APP.CONTACT.MESSAGE" | translate }}</mat-label>
             <textarea
               matInput
               rows="8"
@@ -138,7 +170,7 @@
               svgIcon="clear"
             >
             </mat-icon>
-            <mat-hint>{{ 'APP.CONTACT.MIN_MAX' | translate }}</mat-hint>
+            <mat-hint>{{ "APP.CONTACT.MIN_MAX" | translate }}</mat-hint>
             @if (messageControl.invalid) {
               <mat-error>{{ getErrorMessage() }}</mat-error>
             }
@@ -154,7 +186,7 @@
           (click)="onSubmit()"
           [disabled]="form.pristine || form.invalid"
         >
-          {{ 'APP.CONTACT.SUBMIT' | translate }}
+          {{ "APP.CONTACT.SUBMIT" | translate }}
         </button>
       </mat-card-actions>
     </mat-card>
