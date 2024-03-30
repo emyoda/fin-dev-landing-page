@@ -27,6 +27,12 @@
   }
 }
 
+.social-media-icon {
+  color: #1ac4ff;
+  width: 40px;
+  height: 4rem;
+}
+
 .contact-container-info-text-body {
   /* padding-left: 5rem; */
   font-size: 28px;
@@ -45,6 +51,13 @@
 
 .contact-area-container {
   padding-top: 5rem;
+}
+
+.contact-area-container-social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 38px;
 }
 
 .contact-info-container {
