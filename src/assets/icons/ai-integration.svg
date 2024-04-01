@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg fill="var(--main-color)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 32 32" xml:space="preserve">
 <path id="ai--robustness_1_" d="M16.36,31h-0.72v-2h0.72V31z M26.352,26.861l-1.414-1.414l0.51-0.51l1.414,1.414L26.352,26.861z
 	 M5.648,26.861l-0.509-0.51l1.414-1.414l0.509,0.51L5.648,26.861z M18.5,26.36c-1.073,0-2.011-0.595-2.5-1.473

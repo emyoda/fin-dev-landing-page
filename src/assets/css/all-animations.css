@@ -756,7 +756,7 @@
   bottom: -2px;
   right: -2px;
   border-radius: inherit;
-  border: 1px solid #1ac4ff;
+  border: 1px solid var(--main-color);
   -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
     infinite;
   animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
@@ -795,7 +795,7 @@
   height: 110px;
   top: 50%;
   left: 50%;
-  border: 1px solid #1ac4ff;
+  border: 1px solid var(--main-color);
   -webkit-animation: zoomBig 3.25s linear infinite;
   animation: zoomBig 3.25s linear infinite;
   border-radius: 50% !important;
@@ -879,7 +879,7 @@
 .object {
   width: 20px;
   height: 20px;
-  background-color: #1ac4ff;
+  background-color: var(--main-color);
   float: left;
   margin-right: 20px;
   margin-top: 65px;

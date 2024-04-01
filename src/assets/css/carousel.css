@@ -277,7 +277,7 @@
 }
 .gallery-controls-previous:hover::before,
 .gallery-controls-next:hover::before {
-  color: #1ac4ff;
+  color: var(--main-color);
 }
 
 /* ----responsive css start---- */
