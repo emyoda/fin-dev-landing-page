@@ -1,8 +1,6 @@
 {
-  "APP": 
-  {
-    "TABS": 
-    {
+  "APP": {
+    "TABS": {
       "HOME": "Startseite",
       "ABOUT": "Über uns",
       "SERVICE": "Service",
@@ -15,8 +13,7 @@
       "CLOUD_SERVICE": "Cloud-Service",
       "AI_SERVICE": "KI-Service"
     },
-    "HOME": 
-    {
+    "HOME": {
       "WELCOME": "Willkommen bei FinDev",
       "TRUSTED_PARTNER": "Ihr vertrauenswürdiger Partner für innovative Lösungen zur Projektverlagerung.",
       "TRANSFORMING_CHALLENGES": "Herausforderungen in Chancen verwandeln und Ideen in digitale Meisterwerke verwandeln.",
@@ -76,8 +73,7 @@
       "PROVEN_TRACK": "Nachgewiesene Erfolgsbilanz",
       "PROVEN_TRACK_DESC": "Verlassen Sie sich auf unsere nachgewiesene Exzellenz. Wir haben transformative digitale Lösungen erfolgreich in verschiedenen Branchen geliefert."
     },
-    "CONTACT": 
-    {
+    "CONTACT": {
       "YOUR_TECH_PARTNER": "Ihr Technologiepartner",
       "TALENTED_TEAM": "Unser talentiertes Team kann Ihnen helfen, Ihre Idee in großartige Dinge zu verwandeln. Lassen Sie uns gemeinsam erstaunliche Dinge entwickeln.",
       "WHERE_TO_FIND_US": "Wo Sie uns finden können",
