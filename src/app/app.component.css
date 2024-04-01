@@ -9,10 +9,10 @@
 
 a {
   text-decoration: none;
-  color: #1ac4ff !important;
+  color: var(--main-color) !important;
 }
 .menu-item {
-  color: #1ac4ff !important;
+  color: var(--main-color) !important;
 }
 .btn-with-icon {
   display: flex;
@@ -41,7 +41,7 @@ a {
 .burger {
   position: absolute;
   right: 10px;
-  color: #1ac4ff !important;
+  color: var(--main-color) !important;
 }
 
 .service-mobile-container {

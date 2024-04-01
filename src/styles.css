@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/custom-styles/custom-styles-services.css');
+
+:root {
+  --main-color: #1ac4ff; 
+}
 
 html,
 body {
@@ -26,23 +31,23 @@ body {
 .findev-icon {
   width: 70px !important;
   height: 70px !important;
-  fill: #1ac4ff !important;
+  fill: var(--main-color) !important;
 }
 
 .findev-icon-sm {
   width: 50px !important;
   height: 50px !important;
-  fill: #1ac4ff !important;
+  fill: var(--main-color) !important;
 }
 
 .findev-icon-social {
   width: 40px !important;
   height: 50px !important;
-  fill: #1ac4ff !important;
+  fill: var(--main-color) !important;
 }
 
 .findev-icon-social-linkedin {
   width: 50px !important;
   height: 50px !important;
-  fill: #1ac4ff !important;
+  fill: var(--main-color) !important;
 }
