@@ -1,10 +1,24 @@
-import { NgModule } from '@angular/core';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { APP_INITIALIZER, NgModule } from "@angular/core";
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { HttpClient } from "@angular/common/http";
+import { AppTranslateLoader } from "../../../../app-translate-loader";
+import { firstValueFrom } from "rxjs";
+import { LanguageEnum } from "../../../../utils/enum/language-enum";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
+}
+
+export function appInitializerFactory(translate: TranslateService) {
+  return () => {
+    translate.setDefaultLang(LanguageEnum.EN);
+    return firstValueFrom(translate.use(LanguageEnum.EN));
+  };
 }
 
 @NgModule({
@@ -12,11 +26,19 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+        useClass: AppTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
   ],
-  exports: [TranslateModule]
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: appInitializerFactory,
+      deps: [TranslateService],
+      multi: true,
+    },
+  ],
+  exports: [TranslateModule],
 })
-export class TranslationModule { }
+export class TranslationModule {}
