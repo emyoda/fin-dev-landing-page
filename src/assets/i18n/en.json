@@ -1,22 +1,18 @@
 {
-  "APP": 
-  {
-    "TABS": 
-    {
+  "APP": {
+    "TABS": {
       "HOME": "Home",
       "ABOUT": "About us",
       "SERVICE": "Service",
       "CONTACT": "Contact us"
-    }, 
-    "SERVICE_TABS": 
-    {
+    },
+    "SERVICE_TABS": {
       "CONSULTANCY_SERVICE": "Consultancy service",
       "SOFTWARE_SERVICE": "Software service",
       "CLOUD_SERVICE": "Cloud service",
       "AI_SERVICE": "AI service"
     },
-    "HOME": 
-    {
+    "HOME": {
       "WELCOME": "Welcome to FinDev",
       "TRUSTED_PARTNER": "Your trusted partner for innovative project outsourcing solutions.",
       "TRANSFORMING_CHALLENGES": "Transforming challenges into opportunities, and turning ideas into digital masterpieces.",
@@ -51,11 +47,10 @@
       "TRUSTED_PARTNERS": "Our trusted partners",
       "TRUSTED_PARTNERS_DESC": "Some of the leading companies trust us to deliver digital solutions that drive growth and innovation."
     },
-    "ABOUT": 
-    {
-      "ABOUT_TITLE": "About FinDev Albania",
+    "ABOUT": {
+      "ABOUT_TITLE": "About FinDev",
       "ABOUT_DESC_1": "A leading force in the Albanian technology landscape, dedicated to delivering cutting-edge digital solutions and fostering professional development in the tech industry.",
-      "ABOUT_DESC_2": "At FinDev Albania, we envision a future where technology drives positive change. We are committed to being at the forefront of this transformation, utilizing our expertise to empower businesses, individuals, and the tech community as a whole.",
+      "ABOUT_DESC_2": "At FinDev, we envision a future where technology drives positive change. We are committed to being at the forefront of this transformation, utilizing our expertise to empower businesses, individuals, and the tech community as a whole.",
       "ABOUT_DESC_3": "Our mission is to deliver exceptional digital solutions that address the unique needs of our clients and to cultivate a culture of continuous professional development within our team and the broader Albanian tech community.",
       "ASSOCIATES": "Associates in EU",
       "SERVICES": "Services",
@@ -64,11 +59,11 @@
       "SPOKEN_LANGUAGES": "Spoken languages",
       "MORE_NUMBERS": "A few more numbers",
       "MORE_NUMBERS_DETAILS": "We are a team of passionate professionals with a shared vision for the future. Our diverse team comprises talented individuals with a wide range of skills and expertise, all dedicated to delivering exceptional digital solutions.",
-      "WHY_COLLABORATE": "Why collaborate with FinDev Albania?",
+      "WHY_COLLABORATE": "Why collaborate with FinDev?",
       "PEOPLE_TRUST_US": "People trust us",
-      "PEOPLE_TRUST_US_DETAILS": "Due to our transparent communication, proven track record, and client-centric approach. Our dedication to quality, collaborative partnership, and adaptability instill confidence, making FinDev Albania a trusted partner for innovative and reliable digital solutions.",
+      "PEOPLE_TRUST_US_DETAILS": "Due to our transparent communication, proven track record, and client-centric approach. Our dedication to quality, collaborative partnership, and adaptability instill confidence, making FinDev a trusted partner for innovative and reliable digital solutions.",
       "INNOVATIVE_SOLUTIONS": "Innovative solutions",
-      "INNOVATIVE_SOLUTIONS_DESC": "At FinDev Albania, innovation is our essence. Expect creative, cutting-edge solutions for standout projects.",
+      "INNOVATIVE_SOLUTIONS_DESC": "At FinDev, innovation is our essence. Expect creative, cutting-edge solutions for standout projects.",
       "COLLABORATIVE_EXCELLENCE": "Collaborative excellence",
       "COLLABORATIVE_EXCELLENCE_DESC": "Experience excellence through collaboration. Our diverse team ensures a comprehensive approach for outstanding outcomes.",
       "TAILORED_FOR_SUCCESS": "Tailored for success",
@@ -76,8 +71,7 @@
       "PROVEN_TRACK": "Proven track record",
       "PROVEN_TRACK_DESC": "Count on our proven excellence. We've successfully delivered transformative digital solutions across diverse industries."
     },
-    "CONTACT": 
-    {
+    "CONTACT": {
       "YOUR_TECH_PARTNER": "Your Tech partner",
       "TALENTED_TEAM": "Our talented team can help transform your idea into great things. Let's develop amazing things together.",
       "WHERE_TO_FIND_US": "Where to find us",
@@ -99,10 +93,8 @@
       "MESSAGE_SHORT": "Message too short",
       "PHONE_INVALID": "Invalid phone number format"
     },
-    "SERVICE": 
-    {
-      "SOFTWARE": 
-      {
+    "SERVICE": {
+      "SOFTWARE": {
         "WELCOME": "Welcome to FinDev - Elevating Businesses through innovative",
         "SOFTWARE_SOLUTIONS": "Software Solutions",
         "WELCOME_DESC": "At FinDev, we specialize in delivering cutting-edge software services that empower businesses to thrive in today's dynamic digital landscape. With a commitment to excellence and a passion for innovation, we bring a wealth of expertise to address your unique challenges and drive your success.",
@@ -127,8 +119,7 @@
         "PROVEN_TRACK": "Proven track record",
         "PROVEN_TRACK_DESC": "Join a growing list of satisfied clients who have experienced tangible results from our software services. From startups to enterprises, we have a track record of delivering excellence across diverse industries."
       },
-      "CLOUD":
-      {
+      "CLOUD": {
         "WELCOME": "Welcome to FinDev - Elevate your Business to new heights with our Cloud Solutions consultancy.",
         "WELCOME_DESC": "At FinDev, we specialize in delivering tailored consultancy services that empower businesses to harness the full potential of the cloud. In an era where digital transformation is imperative for staying competitive, our team is committed to guiding you on your journey towards seamless, scalable, and secure cloud adoption.",
         "SUITE_SOLUTIONS": "Our suite of cloud solutions covers a broad spectrum of services",
@@ -154,8 +145,7 @@
         "EXPERTISE": "Expertise",
         "EXPERTISE_DESC": "Our team of certified cloud consultants brings a wealth of experience in designing, implementing, and managing cloud solutions for businesses across diverse industries."
       },
-      "AI":
-      {
+      "AI": {
         "WELCOME": "Welcome to FinDev - Unleashing the Power of AI",
         "WELCOME_DESC": "At FinDev, we are at the forefront of innovation, harnessing the incredible potential of Artificial Intelligence (AI) to transform businesses and elevate them to new heights. Our comprehensive suite of AI services is designed to empower your organization, drive efficiency, and unlock unprecedented opportunities.",
         "AI_EXPERTISE": "Our AI expertise",
@@ -180,8 +170,7 @@
         "PROVEN_TRACK_DESC": "Our track record speaks for itself. Numerous satisfied clients have experienced tangible benefits from our AI services, ranging from increased efficiency to significant business growth."
       }
     },
-    "FOOTER":
-    {
+    "FOOTER": {
       "GET_STARTED": "Get Started a Project with Us",
       "READY_TO_TURN": "Ready to turn your vision into reality? Contact us today to discuss your project goals and discover the possibilities we can create for your business.",
       "CONTACT_US": "Contact Us",

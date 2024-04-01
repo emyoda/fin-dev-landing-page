@@ -1,22 +1,18 @@
 {
-  "APP": 
-  {
-    "TABS": 
-    {
+  "APP": {
+    "TABS": {
       "HOME": "Startseite",
       "ABOUT": "Über uns",
       "SERVICE": "Dienstleistungen",
       "CONTACT": "Kontaktiere uns"
     },
-    "SERVICE_TABS":
-    {
+    "SERVICE_TABS": {
       "CONSULTANCY_SERVICE": "Beratungsdienst",
       "SOFTWARE_SERVICE": "Software-Dienstleistungen",
       "CLOUD_SERVICE": "Cloud-Dienstleistungen",
       "AI_SERVICE": "KI-Dienstleistungen"
     },
-    "HOME": 
-    {
+    "HOME": {
       "WELCOME": "Willkommen bei FinDev",
       "TRUSTED_PARTNER": "Ihr vertrauenswürdiger Partner für innovative Lösungen im Bereich Projektoutsourcing.",
       "TRANSFORMING_CHALLENGES": "Herausforderungen in Chancen verwandeln und Ideen in digitale Meisterwerke verwandeln.",
@@ -51,11 +47,10 @@
       "TRUSTED_PARTNERS": "Unsere vertrauenswürdigen Partner",
       "TRUSTED_PARTNERS_DESC": "Einige der führenden Unternehmen vertrauen uns, digitale Lösungen zu liefern, die Wachstum und Innovation vorantreiben."
     },
-    "ABOUT": 
-    {
-      "ABOUT_TITLE": "Über FinDev Albania",
+    "ABOUT": {
+      "ABOUT_TITLE": "Über FinDev",
       "ABOUT_DESC_1": "Eine führende Kraft in der albanischen Technologielandschaft, die sich der Bereitstellung hochmoderner digitaler Lösungen und der Förderung der beruflichen Entwicklung in der Tech-Branche verschrieben hat.",
-      "ABOUT_DESC_2": "Bei FinDev Albania sehen wir eine Zukunft, in der Technologie positive Veränderungen vorantreibt. Wir sind entschlossen, an der Spitze dieser Transformation zu stehen und unsere Expertise zu nutzen, um Unternehmen, Einzelpersonen und die gesamte Tech-Community zu befähigen.",
+      "ABOUT_DESC_2": "Bei FinDev sehen wir eine Zukunft, in der Technologie positive Veränderungen vorantreibt. Wir sind entschlossen, an der Spitze dieser Transformation zu stehen und unsere Expertise zu nutzen, um Unternehmen, Einzelpersonen und die gesamte Tech-Community zu befähigen.",
       "ABOUT_DESC_3": "Unsere Mission ist es, außergewöhnliche digitale Lösungen zu liefern, die die einzigartigen Bedürfnisse unserer Kunden erfüllen, und eine Kultur kontinuierlicher beruflicher Entwicklung in unserem Team und der breiteren albanischen Tech-Community zu pflegen.",
       "ASSOCIATES": "Partner in der EU",
       "SERVICES": "Dienstleistungen",
@@ -64,11 +59,11 @@
       "SPOKEN_LANGUAGES": "Gesprochene Sprachen",
       "MORE_NUMBERS": "Ein paar weitere Zahlen",
       "MORE_NUMBERS_DETAILS": "Wir sind ein Team von leidenschaftlichen Fachleuten mit einer gemeinsamen Vision für die Zukunft. Unser vielfältiges Team umfasst talentierte Einzelpersonen mit einem breiten Spektrum an Fähigkeiten und Fachwissen, die sich alle der Bereitstellung außergewöhnlicher digitaler Lösungen verschrieben haben.",
-      "WHY_COLLABORATE": "Warum mit FinDev Albania zusammenarbeiten?",
+      "WHY_COLLABORATE": "Warum mit FinDev zusammenarbeiten?",
       "PEOPLE_TRUST_US": "Die Leute vertrauen uns",
-      "PEOPLE_TRUST_US_DETAILS": "Aufgrund unserer transparenten Kommunikation, unserer nachgewiesenen Erfolgsbilanz und unseres kundenorientierten Ansatzes. Unsere Hingabe zur Qualität, zur partnerschaftlichen Zusammenarbeit und zur Anpassungsfähigkeit schaffen Vertrauen und machen FinDev Albania zu einem vertrauenswürdigen Partner für innovative und zuverlässige digitale Lösungen.",
+      "PEOPLE_TRUST_US_DETAILS": "Aufgrund unserer transparenten Kommunikation, unserer nachgewiesenen Erfolgsbilanz und unseres kundenorientierten Ansatzes. Unsere Hingabe zur Qualität, zur partnerschaftlichen Zusammenarbeit und zur Anpassungsfähigkeit schaffen Vertrauen und machen FinDev zu einem vertrauenswürdigen Partner für innovative und zuverlässige digitale Lösungen.",
       "INNOVATIVE_SOLUTIONS": "Innovative Lösungen",
-      "INNOVATIVE_SOLUTIONS_DESC": "Bei FinDev Albania ist Innovation unsere Essenz. Erwarten Sie kreative, hochmoderne Lösungen für herausragende Projekte.",
+      "INNOVATIVE_SOLUTIONS_DESC": "Bei FinDev ist Innovation unsere Essenz. Erwarten Sie kreative, hochmoderne Lösungen für herausragende Projekte.",
       "COLLABORATIVE_EXCELLENCE": "Kollaborative Exzellenz",
       "COLLABORATIVE_EXCELLENCE_DESC": "Erleben Sie Exzellenz durch Zusammenarbeit. Unser vielfältiges Team gewährleistet einen umfassenden Ansatz für herausragende Ergebnisse.",
       "TAILORED_FOR_SUCCESS": "Maßgeschneidert für Erfolg",
@@ -76,8 +71,7 @@
       "PROVEN_TRACK": "Nachgewiesene Erfolgsbilanz",
       "PROVEN_TRACK_DESC": "Verlassen Sie sich auf unsere nachgewiesene Exzellenz. Wir haben bereits transformative digitale Lösungen in verschiedenen Branchen erfolgreich umgesetzt."
     },
-    "CONTACT": 
-    {
+    "CONTACT": {
       "YOUR_TECH_PARTNER": "Ihr Technologiepartner",
       "TALENTED_TEAM": "Unser talentiertes Team kann Ihnen helfen, Ihre Idee in großartige Dinge zu verwandeln. Lass uns gemeinsam tolle Dinge entwickeln.",
       "WHERE_TO_FIND_US": "Wo Sie uns finden können",
@@ -99,10 +93,8 @@
       "MESSAGE_SHORT": "Nachricht zu kurz",
       "PHONE_INVALID": "Ungültiges Telefonnummerformat"
     },
-    "SERVICE": 
-    {
-      "SOFTWARE": 
-      {
+    "SERVICE": {
+      "SOFTWARE": {
         "WELCOME": "Willkommen bei FinDev - Erhöhen Sie Unternehmen durch Innovation",
         "SOFTWARE_SOLUTIONS": "Softwarelösungen",
         "WELCOME_DESC": "Bei FinDev sind wir auf die Bereitstellung innovativer Software-Services spezialisiert, die Unternehmen ermöglichen, sich in der dynamischen digitalen Landschaft von heute zu behaupten. Mit dem Engagement für Exzellenz und Leidenschaft für Innovation bringen wir ein reiches Fachwissen mit, um Ihre einzigartigen Herausforderungen anzugehen und Ihren Erfolg zu fördern.",
@@ -127,8 +119,7 @@
         "PROVEN_TRACK": "Nachgewiesener Erfolg",
         "PROVEN_TRACK_DESC": "Werden Sie Teil einer wachsenden Liste zufriedener Kunden, die konkrete Ergebnisse aus unseren Software-Services erlebt haben. Von Startups bis hin zu Unternehmen haben wir eine Erfolgsbilanz bei der Bereitstellung von Exzellenz in verschiedenen Branchen."
       },
-      "CLOUD": 
-      {
+      "CLOUD": {
         "WELCOME": "Willkommen bei FinDev - Steigern Sie Ihr Unternehmen auf neue Höhen mit unserer Beratung zu Cloud-Lösungen.",
         "WELCOME_DESC": "Bei FinDev haben wir uns auf maßgeschneiderte Beratungsdienstleistungen spezialisiert, die Unternehmen befähigen, das volle Potenzial der Cloud zu nutzen. In einer Zeit, in der digitale Transformation für die Wettbewerbsfähigkeit unerlässlich ist, ist unser Team darauf bedacht, Sie auf Ihrem Weg zu einer nahtlosen, skalierbaren und sicheren Cloud-Adoption zu unterstützen.",
         "SUITE_SOLUTIONS": "Unsere Palette von Cloud-Lösungen deckt ein breites Spektrum an Dienstleistungen ab",
@@ -152,10 +143,9 @@
         "RELIABILITY": "Zuverlässigkeit",
         "RELIABILITY_DESC": "Verlassen Sie sich auf uns für zuverlässige und skalierbare Cloud-Lösungen, die mit Ihrem Unternehmen wachsen. Unser Engagement für Exzellenz garantiert die Leistung und Verfügbarkeit Ihrer Cloud-Infrastruktur.",
         "EXPERTISE": "Expertise",
-        "EXPERTISE_DESC": "Unser Team zertifizierter Cloud-Berater bringt umfangreiche Erfahrung in Design, Implementierung und Verwaltung von Cloud-Lösungen für Unternehmen verschiedener Branchen mit."    
-      }  ,
-      "AI": 
-      {
+        "EXPERTISE_DESC": "Unser Team zertifizierter Cloud-Berater bringt umfangreiche Erfahrung in Design, Implementierung und Verwaltung von Cloud-Lösungen für Unternehmen verschiedener Branchen mit."
+      },
+      "AI": {
         "WELCOME": "Willkommen bei FinDev - Die Kraft der KI entfesseln",
         "WELCOME_DESC": "Bei FinDev sind wir führend in Innovationen und nutzen das unglaubliche Potenzial der Künstlichen Intelligenz (KI), um Unternehmen zu transformieren und sie zu neuen Höhen zu führen. Unser umfassendes Angebot an KI-Dienstleistungen ist darauf ausgelegt, Ihre Organisation zu stärken, die Effizienz zu steigern und beispiellose Möglichkeiten zu eröffnen.",
         "AI_EXPERTISE": "Unsere KI-Expertise",
@@ -178,7 +168,7 @@
         "RELIABILITY_SEC_DESC": "Vertrauen ist in der Welt der KI von größter Bedeutung. Wir legen Wert auf die Sicherheit und Zuverlässigkeit unserer Lösungen und stellen sicher, dass Ihre Daten mit größter Sorgfalt und Vertraulichkeit behandelt werden.",
         "PROVEN_TRACK": "Nachgewiesene Erfolgsbilanz",
         "PROVEN_TRACK_DESC": "Unsere Erfolgsbilanz spricht für sich. Zahlreiche zufriedene Kunden haben konkrete Vorteile aus unseren KI-Dienstleistungen erfahren, von gesteigerter Effizienz bis hin zu signifikantem Geschäftswachstum."
-      }  
+      }
     },
     "FOOTER": {
       "GET_STARTED": "Starten Sie ein Projekt mit uns",
