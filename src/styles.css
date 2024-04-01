@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/custom-styles/custom-styles-services.css');
 
 html,
 body {
@@ -21,16 +22,4 @@ body {
 
 .mat-mdc-menu-panel {
   background-color: whitesmoke !important;
-}
-
-.findev-icon {
-  width: 70px !important;
-  height: 70px !important;
-  fill: #1ac4ff !important;
-}
-
-.findev-icon-sm {
-  width: 50px !important;
-  height: 50px !important;
-  fill: #1ac4ff !important;
 }

@@ -101,6 +101,28 @@
     },
     "SERVICE": 
     {
+      "CONSULTANCY": {
+        "WELCOME": "Welcome to FinDev - Empowering businesses through Expert consultancy",
+        "WELCOME_DESC": "At FinDev, we provide specialized consultancy services to help businesses navigate the complexities of the digital landscape. Our team of seasoned consultants offers strategic guidance and practical solutions tailored to your unique needs, empowering you to make informed decisions and achieve your business objectives.",
+        "EXPERTISE": "Our consultancy expertise",
+        "STRATEGIC_PLANNING": "Strategic Planning",
+        "STRATEGIC_PLANNING_DESC": "Craft a roadmap for success with our strategic planning services. Our consultants work closely with you to define clear objectives and develop actionable plans to achieve your business goals.",
+        "BUSINESS_ANALYSIS": "Business Analysis",
+        "BUSINESS_ANALYSIS_DESC": "Gain valuable insights into your business operations with our comprehensive business analysis services. We identify opportunities for improvement and help you optimize processes to enhance efficiency and drive growth.",
+        "DIGITAL_TRANSFORMATION": "Digital Transformation",
+        "DIGITAL_TRANSFORMATION_DESC": "Embrace digital innovation with confidence. Our consultants guide you through every stage of the digital transformation journey, from assessing your current capabilities to implementing cutting-edge solutions that drive business value.",
+        "STRATEGIC_ADVICE": "Strategic Advice",
+        "STRATEGIC_ADVICE_DESC": "Benefit from expert strategic advice tailored to your business needs. Our consultants provide actionable recommendations to overcome challenges, capitalize on opportunities, and achieve sustainable growth.",
+        "WHY_US": "Why choose us?",
+        "INNOVATION_CORE": "Innovation at the core",
+        "INNOVATION_CORE_DESC": "We thrive on pushing the boundaries of technology, staying abreast of the latest trends to deliver solutions that keep you ahead in the digital race.",
+        "COLLABORATIVE_APPROACH": "Collaborative approach",
+        "COLLABORATIVE_APPROACH_DESC": "Your success is our success. We believe in collaborative partnerships, working closely with you to ensure that our solutions align seamlessly with your vision and objectives.",
+        "RELIABILITY_SEC": "Reliability and Security",
+        "RELIABILITY_SEC_DESC": "Trust is paramount in consultancy. We prioritize the security and reliability of our services, ensuring that your business information is handled with the utmost care and confidentiality.",
+        "PROVEN_TRACK": "Proven track record",
+        "PROVEN_TRACK_DESC": "Join a growing list of satisfied clients who have experienced tangible results from our consultancy services. From startups to enterprises, we have a track record of delivering excellence across diverse industries."
+      },
       "SOFTWARE": 
       {
         "WELCOME": "Welcome to FinDev - Elevating Businesses through innovative",
@@ -132,10 +154,10 @@
         "WELCOME": "Welcome to FinDev - Elevate your Business to new heights with our Cloud Solutions consultancy.",
         "WELCOME_DESC": "At FinDev, we specialize in delivering tailored consultancy services that empower businesses to harness the full potential of the cloud. In an era where digital transformation is imperative for staying competitive, our team is committed to guiding you on your journey towards seamless, scalable, and secure cloud adoption.",
         "SUITE_SOLUTIONS": "Our suite of cloud solutions covers a broad spectrum of services",
-        "DATA_MNG": "Data management and analytics",
+        "DATA_MNG": "Data Management and Analytics",
         "HARNESS": "Harness the power of your data with advanced analytics solutions.",
         "DATA_DRIVEN": "Enable data-driven decision-making for a competitive edge.",
-        "CLOUD_STRATEGY": "Cloud strategy and planning",
+        "CLOUD_STRATEGY": "Cloud Strategy and Planning",
         "CLEAR_ROADMAP": "Develop a clear roadmap for your cloud adoption journey.",
         "ALIGN_STRATEGIES": "Align cloud strategies with your business objectives for maximum impact.",
         "PAAS": "Platform as a Service (PaaS)",
