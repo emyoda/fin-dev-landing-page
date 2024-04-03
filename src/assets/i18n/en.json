@@ -93,8 +93,7 @@
       "MESSAGE_SHORT": "Message too short",
       "PHONE_INVALID": "Invalid phone number format"
     },
-    "SERVICE": 
-    {
+    "SERVICE": {
       "CONSULTANCY": {
         "WELCOME": "Welcome to FinDev - Empowering businesses through Expert consultancy",
         "WELCOME_DESC": "At FinDev, we provide specialized consultancy services to help businesses navigate the complexities of the digital landscape. Our team of seasoned consultants offers strategic guidance and practical solutions tailored to your unique needs, empowering you to make informed decisions and achieve your business objectives.",
@@ -117,8 +116,7 @@
         "PROVEN_TRACK": "Proven track record",
         "PROVEN_TRACK_DESC": "Join a growing list of satisfied clients who have experienced tangible results from our consultancy services. From startups to enterprises, we have a track record of delivering excellence across diverse industries."
       },
-      "SOFTWARE": 
-      {
+      "SOFTWARE": {
         "WELCOME": "Welcome to FinDev - Elevating Businesses through innovative",
         "SOFTWARE_SOLUTIONS": "Software Solutions",
         "WELCOME_DESC": "At FinDev, we specialize in delivering cutting-edge software services that empower businesses to thrive in today's dynamic digital landscape. With a commitment to excellence and a passion for innovation, we bring a wealth of expertise to address your unique challenges and drive your success.",

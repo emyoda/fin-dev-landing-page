@@ -16,7 +16,6 @@ import { MatSidenav, MatSidenavModule } from "@angular/material/sidenav";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatButtonModule } from "@angular/material/button";
 import { LanguageSelectorComponent } from "./utils/language-selector/language-selector.component";
-import { TranslationModule } from "./pages/shared/services/translation-service/translation.module";
 import { TranslateModule } from "@ngx-translate/core";
 import { TranslationService } from "./pages/shared/services/translation-service/translation.service";
 
@@ -31,7 +30,6 @@ interface Tab {
   standalone: true,
   imports: [
     CommonModule,
-    TranslationModule,
     TranslateModule,
     RouterOutlet,
     MatSnackBarModule,
