@@ -1,7 +1,10 @@
 import { ApplicationConfig, importProvidersFrom } from "@angular/core";
 import { provideRouter } from "@angular/router";
 import { routes } from "./app.routes";
-import { provideClientHydration } from "@angular/platform-browser";
+import {
+  provideClientHydration,
+  withHttpTransferCacheOptions,
+} from "@angular/platform-browser";
 import {
   HttpClientModule,
   provideHttpClient,
@@ -16,7 +19,11 @@ import { TranslationModule } from "./pages/shared/services/translation-service/t
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideClientHydration(),
+    provideClientHydration(
+      withHttpTransferCacheOptions({
+        includePostRequests: true,
+      })
+    ),
     provideHttpClient(withFetch()),
     importProvidersFrom([
       BrowserAnimationsModule,
